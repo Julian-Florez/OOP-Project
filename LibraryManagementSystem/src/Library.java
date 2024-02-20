@@ -4,7 +4,7 @@ public class Library {
         private String name;
         private String author;
         private int pages;
-        private int ISBN;
+        private int isbn;
         private String editorial;
         private String collection;
         private String category;
