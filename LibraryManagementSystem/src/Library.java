@@ -102,7 +102,7 @@ public class Library {
        Library library = new Library();
 
         //sections 
-        Section section_classic= (library.new Section()).addSection("Clásicos", 10000, "A1", new ArrayList<Book>());
+        Section section_classic= (library.new Section()).addSection("Clásicos", 0, "A1", new ArrayList<Book>());
 
         //books
         (library.new Book()).addBook("El principito", "Antoine de Saint-Exupéry", 96, 0, "9783140464079", "Emecé", "Clásicos", "Ficción", "A11", true, section_classic);
