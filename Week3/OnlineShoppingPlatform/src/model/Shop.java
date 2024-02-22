@@ -16,9 +16,9 @@ public class Shop {
         MethodOfPayment methodOfPayment = new MethodOfPayment();
 
         //add a new product
-        product.addProduct("1", "Iphone 12", 1000, 10);
+        product.addProduct("Iphone 12", 1, 1000, 10 ,"Electronics");
         //add a new customer
-        customer.addCustomer("1", "John", "Doe", "email");
+        customer.addCustomer("John Doe", "email@shop", "123 Bogota", 123456789);
         //add a new Cart
         cart.addCart(customer);
         cart.addProduct(product);
