@@ -1,6 +1,6 @@
 package model;
 
-import model.Library.Section;
+import model.Section;
 
 public class Book {
     private String name;
