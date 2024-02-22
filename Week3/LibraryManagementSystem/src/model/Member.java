@@ -1,6 +1,5 @@
 package model;
 import java.util.ArrayList;
-import model.Book;
 
 public class Member {
 
@@ -20,7 +19,7 @@ public class Member {
         this.borrowedBooks.add(book);
         (book).lentBook();
     }
-    
+
     public void returnBook(Book book) {
         this.borrowedBooks.remove(book);
         book.returnBook();

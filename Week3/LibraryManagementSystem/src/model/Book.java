@@ -1,5 +1,4 @@
 package model;
-import model.Section;
 
 public class Book {
 
@@ -34,7 +33,7 @@ public class Book {
     public void lentBook() {
         this.avaliability = false;
     }
-    
+
     public void returnBook() {
         this.avaliability = true;
     }

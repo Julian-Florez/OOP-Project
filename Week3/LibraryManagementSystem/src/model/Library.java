@@ -1,9 +1,5 @@
 package model;
 import java.util.ArrayList;
-import model.Section;
-import model.Book;
-import model.Member;
-import model.Librarian;
 
 public class Library {
     
@@ -19,6 +15,7 @@ public class Library {
         private String location;
         private boolean avaliability;
         private Section section;
+
 
         public Book addBook(String name, String author, int pages, int id, String isbn ,String editorial, String collection, String category, String location, boolean avaliability, Section section) {
             this.name = name;

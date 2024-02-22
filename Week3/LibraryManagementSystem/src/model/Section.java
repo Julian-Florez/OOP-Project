@@ -1,5 +1,4 @@
 package model;
-import model.Book;
 import java.util.ArrayList;
 
 public class Section {
@@ -15,7 +14,7 @@ public class Section {
         this.books = books;
         return this;
     }
-    
+
     public void addBook(Book book) {
         this.books.add(book);
     }

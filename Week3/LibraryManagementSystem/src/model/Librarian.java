@@ -1,5 +1,4 @@
 package model;
-import model.Section;
 
 public class Librarian {
     String name;
