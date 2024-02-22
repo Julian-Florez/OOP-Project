@@ -2,11 +2,11 @@ package model;
 import java.util.ArrayList;
 
 public class MethodOfPayment{
-    private Customer customer;
-    private String type;
-    private String number;
-    private String expirationDate;
-    private String cvv;
+    Customer customer;
+    String type;
+    String number;
+    String expirationDate;
+    String cvv;
 
     public MethodOfPayment addMethodOfPayment(Customer customer, String type, String number, String expirationDate, String cvv) {
         this.customer = customer;

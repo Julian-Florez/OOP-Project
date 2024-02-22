@@ -2,8 +2,8 @@ package model;
 import java.util.ArrayList;
 
 public class Cart{
-    private Customer customer;
-    private ArrayList<Product> products = new ArrayList<Product>();
+    Customer customer;
+    ArrayList<Product> products = new ArrayList<Product>();
 
     public Cart addCart(Customer customer) {
         this.customer = customer;
