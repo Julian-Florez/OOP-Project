@@ -53,9 +53,9 @@ public class Library {
             return this;
         }
 
-        public void borrowBook(Section section, int id) {
-            this.borrowedBooks.add(section.books.get(id));
-            (section.books.get(id)).lentBook();
+        public void borrowBook(Book book) {
+            this.borrowedBooks.add(book);
+            (book).lentBook();
         }
 
         public void returnBook(Book book) {
@@ -119,8 +119,8 @@ public class Library {
         System.out.println(section_classic.books.get(1).name);
         System.out.println(section_classic.books.get(0).name);
 
-        member1.borrowBook(section_classic,0);
-        member1.borrowBook(section_classic,1);
+        member1.borrowBook(section_classic.books.get(0));
+        member1.borrowBook(section_classic.books.get(1));
         System.out.println(member1.name+" "+member1.id+" "+member1.email);
         System.out.println(member1.borrowedBooks.get(0).name+" "+section_classic.books.get(0).avaliability);
         System.out.println(member1.borrowedBooks.size());
