@@ -1,4 +1,4 @@
-package model;
+package shoppingPackage;
 import java.util.ArrayList;
 
 public class Customer{

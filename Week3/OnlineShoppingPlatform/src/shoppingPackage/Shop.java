@@ -1,4 +1,4 @@
-package model;
+package shoppingPackage;
 
 public class Shop {
     public static void main(String[] args){

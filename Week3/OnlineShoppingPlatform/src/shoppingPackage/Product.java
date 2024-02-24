@@ -1,4 +1,4 @@
-package model;
+package shoppingPackage;
 
 public class Product{
     String name;

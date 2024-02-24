@@ -1,4 +1,4 @@
-package model;
+package libraryPackage;
 import java.util.ArrayList;
 
 public class Library {
