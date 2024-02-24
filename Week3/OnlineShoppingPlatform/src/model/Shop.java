@@ -41,10 +41,6 @@ public class Shop {
         System.out.println("Processed: " + order.processed);
         order.deliverOrder();
         System.out.println("Delivered: " + order.delivered);
-
-
-
-
     }
 
 }
