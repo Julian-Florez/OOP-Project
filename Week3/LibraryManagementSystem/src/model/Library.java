@@ -3,7 +3,8 @@ import java.util.ArrayList;
 
 public class Library {
 
-    public static void main() {
+    public static void main(String[] args){
+        
         // Create a new section
         Section section = new Section();
         // Create a new book
