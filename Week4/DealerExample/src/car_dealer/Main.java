@@ -19,6 +19,14 @@ public class Main{
         myCars.addCar(car5);
 
         System.out.println(myCars);
+
+        System.out.println(myCars.searchCarByModel("Sandero"));
+
+        System.out.println(myCars.removeCar(car2));
+
+        System.out.println(myCars);
+
+        System.out.println(myCars.searchCarByModel("Sandero"));
     }
 
 }
