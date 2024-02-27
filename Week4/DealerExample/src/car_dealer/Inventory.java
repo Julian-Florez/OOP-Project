@@ -32,7 +32,7 @@ public class Inventory {
      * @param car
      */
     public void addCar(Car car){
-        cars[this.setter] = car
+        cars[this.setter] = car;
         setter += 1;
     }
 
@@ -42,13 +42,13 @@ public class Inventory {
      * @return
      */
     public boolean removeCar(Car car){
+        boolean find = false;
         for (int i=0; i<cars.length; i++){
             if (cars[i].equals(car)){
                 find = true;
                 cars[i] = null;
             }
         }
-
         return find;
     }
     
@@ -58,15 +58,22 @@ public class Inventory {
      * @return
      */
     public Car searchCarByModel(String model){
+    Car tmpCar = null;
         //for (int=0, i<cars.length; i++){
         for (int i=0; i<this.carsQuantity; i++){
             //if (cars[i].getModel().equals(model)){
             if (cars[i].getModel()==model){
-                return cars[i];
-            }
-            else{
-                return null;
+                tmpCar = cars[i];
             }
         }
+        return tmpCar;
+    }
+
+    public String toString(){
+        String tmp = "";
+        for (int i=0; i<this.carsQuantity; i++){
+            tmp += cars[i] + "\n";
+        }
+        return tmp;
     }
 }

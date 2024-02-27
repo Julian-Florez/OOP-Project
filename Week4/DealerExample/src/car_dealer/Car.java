@@ -52,4 +52,8 @@ public class Car {
     public void setAvailability(boolean availability) {
         this.availability = availability;
     }
+
+    public String toString() {
+        return model + "-" + year;
+    }
 }
