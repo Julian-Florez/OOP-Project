@@ -1,35 +1,36 @@
 package libraryPackage;
 import java.util.ArrayList;
 
+
+/**
+ * This class represents the library.
+ * It contains the main method to test the library.
+ * It creates a new section, member, librarian and book.
+ * It also tests the borrow and return book methods.
+ */
 public class Library {
 
     public static void main(String[] args){
         
         // Create a new section
-        Section section = new Section();
+        Section section = new Section("Science Fiction", 1, "First floor", new ArrayList<Book>());
         // Create a new member
-        Member member = new Member();
+        Member member = new Member("John Doe", 1, "jd@lib");
         // Create a new librarian
-        Librarian librarian = new Librarian();
-
-        // Add a new section
-        section.addSection("Science Fiction", 1, "First floor", new ArrayList<Book>());
+        Librarian librarian = new Librarian("Jane Doe", 1, section, "Morning");
         // Add a new book
-        new Book().addBook("The Hobbit", "J.R.R. Tolkien", 300, 1, "978-3-16-148410-0", "Houghton Mifflin Harcourt", "Tolkien Collection", "Fantasy", "First floor", true, section);
+        new Book("The Hobbit", "J.R.R. Tolkien", 300, 1, "978-3-16-148410-0", "Houghton Mifflin Harcourt", "Tolkien Collection", "Fantasy", "First floor", true, section);
         // Add a new member
-        member.addMember("John Doe", 1, "jd@lib");
-        // Add a new librarian
-        librarian.addLibrarian("Jane Doe", 1, section, "Morning");
         
 
-        System.out.println(section.books.get(0).avaliability);
-        member.borrowBook(section.books.get(0));
+        System.out.println(section.getBooks().get(0).getAvaliability());
+        member.borrowBook(section.getBooks().get(0));
 
-
-        System.out.println(member.name);
-        System.out.println(section.books.get(0).avaliability);
-        System.out.println(member.borrowedBooks.get(0).name);
-        System.out.println(section.books.get(0).name);
+        System.out.println(librarian.getName());
+        System.out.println(member.getName());
+        System.out.println(section.getBooks().get(0).getAvaliability());
+        System.out.println(member.getBorrowedBooks().get(0).getName());
+        System.out.println(section.getBooks().get(0).getName());
     }
 
 }
