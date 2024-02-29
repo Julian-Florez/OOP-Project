@@ -8,17 +8,41 @@ public class Order{
     private boolean processed = false;
     private boolean delivered = false;
 
-    public Order addOrder(int id, Cart cart, MethodOfPayment methodOfPayment) {
+    public Order(int id, Cart cart, MethodOfPayment methodOfPayment) {
         this.id = id;
         this.cart = cart;
         this.methodOfPayment = methodOfPayment;
         this.sumPrices();
-        return this;
     }
-    
+
+    public int getId() {
+        return this.id;
+    }
+
+    public Cart getCart() {
+        return this.cart;
+    }
+
+    public double getTotal() {
+        return this.total;
+    }
+
+    public MethodOfPayment getMethodOfPayment() {
+        return this.methodOfPayment;
+    }
+
+    public boolean getProcessed() {
+        return this.processed;
+    }
+
+    public boolean getDelivered() {
+        return this.delivered;
+    }
+
+
     public void sumPrices() {
-        for (Product product : cart.products) {
-            this.total += product.price;
+        for (Product product : cart.getProducts()) {
+            this.total += product.getPrice();
         }
     }
 
@@ -28,5 +52,9 @@ public class Order{
 
     public void deliverOrder() {
         this.delivered = true;
+    }
+
+    public String toString() {
+        return "(Order: " + this.id + " Cart: " + this.cart + " Total: " + this.total + " Method of Payment: " + this.methodOfPayment + " Processed: " + this.processed + " Delivered: " + this.delivered + ")";
     }
 }
