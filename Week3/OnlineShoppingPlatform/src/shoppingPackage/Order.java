@@ -1,12 +1,12 @@
 package shoppingPackage;
 
 public class Order{
-    int id;
-    Cart cart;
-    double total = 0.0;
-    MethodOfPayment methodOfPayment;
-    boolean processed = false;
-    boolean delivered = false;
+    private int id;
+    private Cart cart;
+    private double total = 0.0;
+    private MethodOfPayment methodOfPayment;
+    private boolean processed = false;
+    private boolean delivered = false;
 
     public Order addOrder(int id, Cart cart, MethodOfPayment methodOfPayment) {
         this.id = id;
