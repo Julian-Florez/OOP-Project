@@ -43,6 +43,10 @@ public class Member {
         this.borrowedBooks.add(book);
     }
 
+    public String toString() {
+        return "(Name: " + this.name + ", Id: " + this.id + ", Email: " + this.email + ", Borrowed books: " + this.borrowedBooks+")";
+    }
+
     public void borrowBook(Book book) {
         this.borrowedBooks.add(book);
         (book).lentBook();

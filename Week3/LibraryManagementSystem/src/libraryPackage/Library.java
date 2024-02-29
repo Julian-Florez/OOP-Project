@@ -26,11 +26,13 @@ public class Library {
         System.out.println(section.getBooks().get(0).getAvaliability());
         member.borrowBook(section.getBooks().get(0));
 
-        System.out.println(librarian.getName());
+        System.out.println(librarian);
         System.out.println(member.getName());
         System.out.println(section.getBooks().get(0).getAvaliability());
         System.out.println(member.getBorrowedBooks().get(0).getName());
-        System.out.println(section.getBooks().get(0).getName());
+        System.out.println(member);
+        System.out.println(section.getBooks().get(0));
+        System.out.println(section);
     }
 
 }

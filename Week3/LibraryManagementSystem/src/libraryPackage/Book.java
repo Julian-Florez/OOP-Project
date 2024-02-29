@@ -103,6 +103,13 @@ public class Book {
     }
 
     /**
+     * Method to print the book's name and author.
+     */
+    public String toString() {
+       return ("(Book: " + this.name + ", Author: " + this.author+")");
+    }
+
+    /**
      * Methods to lent and return a book.
      */
     public void lentBook() {

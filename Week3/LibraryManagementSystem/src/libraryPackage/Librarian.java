@@ -57,4 +57,8 @@ public class Librarian {
     public void setId(int id) {
         this.id = id;
     }
+
+    public String toString() {
+        return "(Name: " + name + ", Id: " + id + ", Section: " + section + ", Schedule: " + schedule+")";
+    }
 }

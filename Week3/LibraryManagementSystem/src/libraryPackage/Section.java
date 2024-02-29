@@ -42,5 +42,17 @@ public class Section {
         this.id = id;
     }
 
-    
+    public void setLocation(String location) {
+        this.location = location;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String toString() {
+        return "(Name: " + this.name + ", Id: " + this.id + ", Location: " + this.location + ", Books: " + this.books+")";
+    }
+
+
 }
