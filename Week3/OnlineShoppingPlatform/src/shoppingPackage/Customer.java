@@ -1,5 +1,11 @@
 package shoppingPackage;
 import java.util.ArrayList;
+/**
+ * this class represents a customer in the shop.
+ * It contains the name, email, address and id of the customer.
+ * It also contains a list of orders made by the customer.
+ */
+
 
 public class Customer{
     private String name;
@@ -8,6 +14,14 @@ public class Customer{
     private int id;
     private ArrayList<Order> orders = new ArrayList<Order>();
 
+
+    /**
+     * Constructor for the Customer class.
+     * @param name
+     * @param email
+     * @param address
+     * @param id
+     */
     public Customer(String name, String email, String address, int id) {
         this.name = name;
         this.email = email;
@@ -15,6 +29,11 @@ public class Customer{
         this.id = id;
     }
 
+
+    /**
+     * Getters and setters for the Customer class.
+     * @return
+     */
     public String getName() {
         return this.name;
     }
@@ -51,6 +70,10 @@ public class Customer{
         return "(Name: " + this.name + " Email: " + this.email + " Address: " + this.address + " ID: " + this.id + ")";
     }
 
+    /**
+     * Method to add an order to the customer.
+     * @param order
+     */
     public void addOrder(Order order) {
         this.orders.add(order);
     }

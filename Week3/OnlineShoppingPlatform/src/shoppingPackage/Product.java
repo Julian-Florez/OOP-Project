@@ -1,4 +1,8 @@
 package shoppingPackage;
+/**
+ * This class represents a product in the shop.
+ * It contains the name, id, price, stock and category of the product.
+ */
 
 public class Product{
     private String name;
@@ -7,6 +11,14 @@ public class Product{
     private int stock;
     private String category;
 
+    /**
+     * Constructor for the Product class.
+     * @param name
+     * @param id
+     * @param price
+     * @param stock
+     * @param category
+     */
     public Product(String name, int id, double price, int stock, String category) {
         this.name = name;
         this.id = id;
@@ -15,6 +27,10 @@ public class Product{
         this.category = category;
     }
 
+    /**
+     * Getters and setters for the Product class.
+     * @return
+     */
     public String getName() {
         return this.name;
     }
@@ -51,6 +67,9 @@ public class Product{
         this.price = price;
     }
 
+    /**
+     * Method to print the product.
+     */
     public String toString() {
         return "(Name: " + this.name + " ID: " + this.id + " Price: " + this.price + " Stock: " + this.stock + " Category: " + this.category + ")";
     }
