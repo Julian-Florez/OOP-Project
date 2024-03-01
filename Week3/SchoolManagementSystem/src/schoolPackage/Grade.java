@@ -19,6 +19,10 @@ public class Grade {
         student.addGrade(this);
     }
     
+
+    /**
+     * Getters and Setters for the Grade class.
+     */
     public Subject getSubject() {
         return subject;
     }
@@ -39,6 +43,9 @@ public class Grade {
         this.grade = grade;
     }
 
+    /**
+     * toString method for the Grade class.
+     */
     public String toString() {
         return "(Subject: " + subject + ", Grade: " + grade + ")";
     }

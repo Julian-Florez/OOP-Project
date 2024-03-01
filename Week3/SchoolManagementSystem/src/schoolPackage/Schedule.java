@@ -22,6 +22,10 @@ public class Schedule {
         addScheduleToClassroom(classroom);
     }
 
+    /**
+     * Getters and Setters for the Schedule class.
+     * @return
+     */
     public String getDay() {
         return day;
     }
@@ -54,16 +58,27 @@ public class Schedule {
         this.classroom = classroom;
     }
 
+    /**
+     * Method to add a schedule to a teacher.
+     * @param teacher
+     */
     public void addScheduleToTeacher(Teacher teacher) {
         teacher.addSchedule(this);
     }
 
+    /**
+     * Method to add a schedule to all the students of a classroom.
+     * @param classroom
+     */
     public void addScheduleToClassroom(Classroom classroom) {
         for (Student student : classroom.getStudents()) {
             student.addSchedule(this);
         }
     }
 
+    /**
+     * toString method for the Schedule class.
+     */
     public String toString() {
         return "(Day: " + day + ", Time: " + time + ", Subject: " + subject.getName() + ")";
     }

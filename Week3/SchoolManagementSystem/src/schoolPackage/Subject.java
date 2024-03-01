@@ -14,6 +14,10 @@ public class Subject {
         teacher.setSubject(this);
     }
     
+    /**
+     * Getters and Setters for the Subject class.
+     * @return
+     */
     public String getName() {
         return name;
     }
@@ -26,6 +30,9 @@ public class Subject {
         this.teacher = teacher;
     }
 
+    /**
+     * toString method for the Subject class.
+     */
     public String toString() {
         return "(Name: " + name + ", Teacher: " + teacher + ")";
     }
