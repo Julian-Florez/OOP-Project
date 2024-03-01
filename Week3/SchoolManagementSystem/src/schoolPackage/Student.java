@@ -10,6 +10,7 @@ import java.util.ArrayList;
 public class Student {
     private String name;
     private ArrayList<Grade> grades;
+    private double meanGrade;
     private int id;
     private Classroom classroom;
     private ArrayList<Schedule> schedule;
@@ -25,7 +26,10 @@ public class Student {
         this.id = id;
         this.classroom = classroom;
         this.grades = new ArrayList<Grade>();
+        this.meanGrade = 0;
         this.schedule = new ArrayList<Schedule>();
+        addStudentToClassroom(classroom);
+        calcMeanGrade();
     }
 
     /**
@@ -38,6 +42,10 @@ public class Student {
 
     public ArrayList<Grade> getGrades() {
         return grades;
+    }
+
+    public double getMeanGrade() {
+        return meanGrade;
     }
 
     public int getId() {
@@ -72,11 +80,24 @@ public class Student {
         this.schedule.add(schedule);
     }
 
+    public void addStudentToClassroom(Classroom classroom) {
+        classroom.addStudent(this);
+    }
+
+    /**
+     * Method to calculate the mean grade for the student.
+     */
+    public void calcMeanGrade(){
+        for (Grade grade : grades) {
+            this.meanGrade += grade.getGrade();
+        }
+    }
+    
     /**
      * Method to return a string representation of the student.
      * @return
      */
     public String toString() {
-        return "(Name: " + name + " ID: " + id + " Classroom: " + classroom.getId()+")";
+        return "(Name: " + name + " ID: " + id + " Classroom: " + classroom.getId()+" Grades: " + grades + " Schedule: "+ schedule +")";
     }
 }

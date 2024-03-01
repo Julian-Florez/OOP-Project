@@ -18,10 +18,10 @@ public class Teacher {
      * @param id
      * @param subject
      */
-    public Teacher(String name, int id, Subject subject) {
+    public Teacher(String name, int id) {
         this.name = name;
         this.id = id;
-        this.subject = subject;
+        this.subject = null;
         this.classrooms = new ArrayList<Classroom>();
         this.schedule = new ArrayList<Schedule>();
     }
@@ -71,6 +71,6 @@ public class Teacher {
     }
 
     public String toString() {
-        return "(Name: " + name + " ID: " + id + " Subject: " + subject.getName()+")";
+        return "(Name: " + name + " ID: " + id + ")";
     }
 }

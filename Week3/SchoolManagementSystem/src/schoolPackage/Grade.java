@@ -16,7 +16,30 @@ public class Grade {
         this.subject = subject;
         this.grade = grade;
         this.student = student;
+        student.addGrade(this);
+    }
+    
+    public Subject getSubject() {
+        return subject;
+    }
 
-    
-    
+    public double getGrade() {
+        return grade;
+    }
+
+    public Student getStudent() {
+        return student;
+    }
+
+    public void setSubject(Subject subject) {
+        this.subject = subject;
+    }
+
+    public void setGrade(double grade) {
+        this.grade = grade;
+    }
+
+    public String toString() {
+        return "(Subject: " + subject + ", Grade: " + grade + ")";
+    }
 }
