@@ -34,10 +34,6 @@ public class Workout {
         this.workout_name = workout_name;
     }
 
-    public void setExercises(ArrayList<Exercise> exercises) {
-        this.exercises = exercises;
-    }
-
     public void addExercise(Exercise exercise) {
         exercises.add(exercise);
         total_duration += exercise.getDuration();

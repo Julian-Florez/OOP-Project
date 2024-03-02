@@ -37,10 +37,6 @@ public class Exercise {
         this.calories_burnt = calories_burnt;
     }
 
-    public void setExercise_name(String exercise_name) {
-        this.exercise_name = exercise_name;
-    }
-
     public void setExercise_type(String exercise_type) {
         this.exercise_type = exercise_type;
     }
