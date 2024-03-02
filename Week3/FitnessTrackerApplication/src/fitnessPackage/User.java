@@ -1,5 +1,17 @@
 package fitnessPackage;
 
+/**
+ * User class to store the details of the user
+ * @param name name of the user
+ * @param id id of the user
+ * @param contact_number contact number of the user
+ * @param weight weight of the user
+ * @param height height of the user
+ * @param age age of the user
+ * @param bmi bmi of the user
+ * @param goal goal of the user
+ * @param workout workout of the user
+ */
 public class User {
     private String name;
     private int id;
@@ -11,6 +23,15 @@ public class User {
     private Goal goal;
     private Workout workout;
 
+    /**
+     * Constructor to initialize the user details
+     * @param name
+     * @param id
+     * @param contact_number
+     * @param weight
+     * @param height
+     * @param age
+     */
     public User(String name, int id, String contact_number, double weight, double height, int age) {
         this.name = name;
         this.id = id;
@@ -23,6 +44,10 @@ public class User {
         this.workout = null;
     }
 
+    /**
+     * Getters and Setters for the User class
+     * @return
+     */
     public String getName() {
         return name;
     }
@@ -83,10 +108,18 @@ public class User {
         this.workout = workout;
     }
 
+    /**
+     * Method to calculate the BMI of the user
+     * @return
+     */
     public double calculateBMI() {
         return (weight / (height * height));
     }
 
+    /**
+     * toString method to display the user details
+     * @return
+     */
     public String toString() {
         return "(Name: " + name + ", ID: " + id + ", Contact Number: " + contact_number + ", Weight: " + weight + " kg, Height: " + height + " m, Age: " + age + " years, BMI: " + bmi +", Goal: "+ goal + ", Workout: "+ workout +")";
     }
