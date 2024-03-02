@@ -8,6 +8,8 @@ public class User {
     private double height;
     private int age;
     private double bmi;
+    private Goal goal;
+    private Workout workout;
 
     public User(String name, int id, String contact_number, double weight, double height, int age) {
         this.name = name;
@@ -17,6 +19,8 @@ public class User {
         this.height = height;
         this.age = age;
         this.bmi = calculateBMI();
+        this.goal = null;
+        this.workout = null;
     }
 
     public String getName() {
@@ -47,6 +51,14 @@ public class User {
         return bmi;
     }
 
+    public Goal getGoal() {
+        return goal;
+    }
+
+    public Workout getWorkout() {
+        return workout;
+    }
+
     public void setContact_number(String contact_number) {
         this.contact_number = contact_number;
     }
@@ -63,12 +75,20 @@ public class User {
         this.age = age;
     }
 
+    public void setGoal(Goal goal) {
+        this.goal = goal;
+    }
+
+    public void setWorkout(Workout workout) {
+        this.workout = workout;
+    }
+
     public double calculateBMI() {
         return (weight / (height * height));
     }
 
     public String toString() {
-        return "(Name: " + name + ", ID: " + id + ", Contact Number: " + contact_number + ", Weight: " + weight + " kg, Height: " + height + " m, Age: " + age + " years, BMI: " + bmi + ")";
+        return "(Name: " + name + ", ID: " + id + ", Contact Number: " + contact_number + ", Weight: " + weight + " kg, Height: " + height + " m, Age: " + age + " years, BMI: " + bmi +", Goal: "+ goal + ", Workout: "+ workout +")";
     }
     
 }

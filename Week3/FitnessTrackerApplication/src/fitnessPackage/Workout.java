@@ -3,25 +3,19 @@ import java.util.ArrayList;
 
 public class Workout {
     private String workout_name;
-    private User user;
     private ArrayList<Exercise> exercises;
     private int total_duration;
     private int total_calories_burnt;
 
-    public Workout(String workout_name, User user, ArrayList<Exercise> exercises) {
+    public Workout(String workout_name) {
         this.workout_name = workout_name;
-        this.user = user;
-        this.exercises = exercises;
+        this.exercises = new ArrayList<Exercise>();
         this.total_duration = 0;
         this.total_calories_burnt = 0;
     }
 
     public String getWorkout_name() {
         return workout_name;
-    }
-
-    public User getUser() {
-        return user;
     }
 
     public ArrayList<Exercise> getExercises() {
@@ -38,10 +32,6 @@ public class Workout {
 
     public void setWorkout_name(String workout_name) {
         this.workout_name = workout_name;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
     }
 
     public void setExercises(ArrayList<Exercise> exercises) {
@@ -61,6 +51,6 @@ public class Workout {
     }
 
     public String toString(){
-        return "(Workout Name: " + workout_name + ", User: " + user + ", Total Duration: " + total_duration + ", Total Calories Burnt: " + total_calories_burnt +", Exercises: "+ exercises +")";
+        return "(Workout Name: " + workout_name + ", Total Duration: " + total_duration + ", Total Calories Burnt: " + total_calories_burnt +", Exercises: "+ exercises +")";
     }
 }
