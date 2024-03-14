@@ -1,0 +1,61 @@
+<mxfile host="app.diagrams.net" modified="2024-03-12T15:20:34.696Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="Nlkip_7j5UvyTJ494lYR" version="24.0.0" type="google">
+  <diagram name="Página-1" id="e75EqAmOv074ZMDRGjy2">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-6" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;Library&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="30" y="300" width="800" height="640" as="geometry" />
+        </mxCell>
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-2" value="Book" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="60" y="350" width="160" height="570" as="geometry" />
+        </mxCell>
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-3" value="&lt;div&gt;- name:String&lt;/div&gt;&lt;div&gt;- author:String&lt;/div&gt;&lt;div&gt;- pages:int&lt;/div&gt;&lt;div&gt;- id:int&lt;/div&gt;&lt;div&gt;- isbn:String&lt;/div&gt;&lt;div&gt;- editorial:String&lt;/div&gt;&lt;div&gt;- collection:String&lt;/div&gt;&lt;div&gt;- category:String&lt;/div&gt;&lt;div&gt;- location:String&lt;/div&gt;&lt;div&gt;- avaliability:boolean&lt;/div&gt;&lt;div&gt;- section:Section&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Qyo6VF3bzxbn2ctdWiol-2">
+          <mxGeometry y="26" width="160" height="164" as="geometry" />
+        </mxCell>
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Qyo6VF3bzxbn2ctdWiol-2">
+          <mxGeometry y="190" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-5" value="&lt;div&gt;+ Book(String name, String author, int pages, int id, String isbn ,String editorial, String collection, String category, String location, boolean avaliability, Section section)&lt;/div&gt;&lt;div&gt;+ getName(): String&lt;/div&gt;&lt;div&gt;+ getAuthor(): String&lt;/div&gt;&lt;div&gt;+ getPages(): String&lt;/div&gt;&lt;div&gt;+ getId(): int&lt;/div&gt;&lt;div&gt;+ getISBN(): String&lt;/div&gt;&lt;div&gt;+ getEditorial(): String&lt;/div&gt;&lt;div&gt;+ getCollection(): String&lt;/div&gt;&lt;div&gt;+ getLocation(): String&lt;/div&gt;&lt;div&gt;+ getAvaliability(): boolean&lt;/div&gt;&lt;div&gt;+ getSection(): Section&lt;/div&gt;&lt;div&gt;+ setId(int id)&lt;/div&gt;&lt;div&gt;+ setSection(Section section)&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;&lt;div&gt;+ lentBook()&lt;/div&gt;&lt;div&gt;+ returnBook()&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Qyo6VF3bzxbn2ctdWiol-2">
+          <mxGeometry y="220" width="160" height="350" as="geometry" />
+        </mxCell>
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-7" value="Member" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="254" y="350" width="216" height="270" as="geometry" />
+        </mxCell>
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-8" value="&lt;div&gt;- name:String&lt;/div&gt;&lt;div&gt;- id:int&lt;/div&gt;&lt;div&gt;- email:String&lt;/div&gt;&lt;div&gt;- borrowedbooks:ArrayList&amp;lt;Books&amp;gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Qyo6VF3bzxbn2ctdWiol-7">
+          <mxGeometry y="26" width="216" height="84" as="geometry" />
+        </mxCell>
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-9" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Qyo6VF3bzxbn2ctdWiol-7">
+          <mxGeometry y="110" width="216" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-10" value="&lt;div&gt;+ getName(): String&lt;/div&gt;&lt;div&gt;+ getId(): Id&lt;/div&gt;&lt;div&gt;+ getEmail(): String&lt;/div&gt;&lt;div&gt;+ getBorrowedBooks: ArrayList&amp;lt;Book&amp;gt;&lt;/div&gt;&lt;div&gt;+ setId(int id)&lt;/div&gt;&lt;div&gt;+ addBook(Book book)&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;&lt;div&gt;+ borrowBook()&lt;/div&gt;&lt;div&gt;+ returnBook()&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Qyo6VF3bzxbn2ctdWiol-7">
+          <mxGeometry y="118" width="216" height="152" as="geometry" />
+        </mxCell>
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-11" value="librarian" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="350" width="160" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-12" value="&lt;div&gt;- name:String&lt;/div&gt;&lt;div&gt;- id:int&lt;/div&gt;&lt;div&gt;- section:Section&lt;/div&gt;&lt;div&gt;- schedule:String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Qyo6VF3bzxbn2ctdWiol-11">
+          <mxGeometry y="26" width="160" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Qyo6VF3bzxbn2ctdWiol-11">
+          <mxGeometry y="100" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-14" value="&lt;div&gt;+ Librarian(String name, int id, Section section, String schedule)&lt;/div&gt;&lt;div&gt;+ getName(): String&lt;/div&gt;&lt;div&gt;+ getId(): int&lt;/div&gt;&lt;div&gt;+ getSection(): Section&lt;/div&gt;&lt;div&gt;+ getSchedule(): String&lt;/div&gt;&lt;div&gt;+ setSection(Section section)&lt;/div&gt;&lt;div&gt;+ setSchedule(String string)&lt;/div&gt;&lt;div&gt;+ setId(int id)&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Qyo6VF3bzxbn2ctdWiol-11">
+          <mxGeometry y="108" width="160" height="182" as="geometry" />
+        </mxCell>
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-15" value="Section" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="660" y="350" width="160" height="338" as="geometry" />
+        </mxCell>
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-16" value="&lt;div&gt;- name:String&lt;/div&gt;&lt;div&gt;- id:int&lt;/div&gt;&lt;div&gt;- location:String&lt;/div&gt;&lt;div&gt;- books:ArrayList&amp;lt;Books&amp;gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Qyo6VF3bzxbn2ctdWiol-15">
+          <mxGeometry y="26" width="160" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="Qyo6VF3bzxbn2ctdWiol-15">
+          <mxGeometry y="100" width="160" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="Qyo6VF3bzxbn2ctdWiol-18" value="&lt;div&gt;+Section(String name, int id, String location, ArrayList&amp;lt;Book&amp;gt; books)&lt;/div&gt;&lt;div&gt;+ addBook(Book book)&lt;/div&gt;&lt;div&gt;+ removeBook(Book book)&lt;/div&gt;&lt;div&gt;+ getName(): String&lt;/div&gt;&lt;div&gt;+ getId(): int&lt;/div&gt;&lt;div&gt;+ getLocation(): String&lt;/div&gt;&lt;div&gt;+ getBooks(): ArrayList&amp;lt;Book&amp;gt;&lt;/div&gt;&lt;div&gt;+ setId(int id)&lt;/div&gt;&lt;div&gt;+ setLocation(String location)&lt;/div&gt;&lt;div&gt;+ setName(String name)&lt;/div&gt;&lt;div&gt;+ toString(): String&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="Qyo6VF3bzxbn2ctdWiol-15">
+          <mxGeometry y="108" width="160" height="230" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
