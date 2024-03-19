@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Página-1" id="GBJqVmvnFpaByWBmFzSr">
-        <mxGraphModel dx="1508" dy="752" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="528" dy="383" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -55,41 +55,41 @@
                 <mxCell id="0c8S-kHDC3mvuFu8LvDb-18" value="&lt;div&gt;+ Goal(int target_weight, String deadline)&lt;/div&gt;&lt;div&gt;+ getTarget_weight(): int&lt;/div&gt;&lt;div&gt;+ getDeadline(): String&lt;/div&gt;&lt;div&gt;+ setTarget_weight(int target_weight)&lt;/div&gt;&lt;div&gt;+ setDeadline(String deadline)&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="0c8S-kHDC3mvuFu8LvDb-15" vertex="1">
                     <mxGeometry y="78" width="160" height="142" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0c8S-kHDC3mvuFu8LvDb-3" target="0c8S-kHDC3mvuFu8LvDb-16">
+                <mxCell id="2" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="0c8S-kHDC3mvuFu8LvDb-3" target="0c8S-kHDC3mvuFu8LvDb-16" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="8" value="UserHasGoals" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2">
+                <mxCell id="8" value="UserHasGoals" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="2" vertex="1" connectable="0">
                     <mxGeometry x="-0.0699" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="9" value="- goals&lt;br&gt;1...*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2">
+                <mxCell id="9" value="- goals&lt;br&gt;1...*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="2" vertex="1" connectable="0">
                     <mxGeometry x="0.7324" y="-1" relative="1" as="geometry">
                         <mxPoint x="-14" y="-22" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="4" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="0c8S-kHDC3mvuFu8LvDb-12" target="0c8S-kHDC3mvuFu8LvDb-7">
+                <mxCell id="4" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="0c8S-kHDC3mvuFu8LvDb-12" target="0c8S-kHDC3mvuFu8LvDb-7" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="WorkoutHasExercises" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4">
+                <mxCell id="6" value="WorkoutHasExercises" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="4" vertex="1" connectable="0">
                     <mxGeometry x="0.1143" y="1" relative="1" as="geometry">
                         <mxPoint x="-24" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="7" value="- exercises&lt;br&gt;1...*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="4">
+                <mxCell id="7" value="- exercises&lt;br&gt;1...*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="4" vertex="1" connectable="0">
                     <mxGeometry x="-0.8253" relative="1" as="geometry">
                         <mxPoint x="271" y="18" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="5" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="0c8S-kHDC3mvuFu8LvDb-12" target="0c8S-kHDC3mvuFu8LvDb-3">
+                <mxCell id="5" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="0c8S-kHDC3mvuFu8LvDb-12" target="0c8S-kHDC3mvuFu8LvDb-3" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="WorkoutAssignedUser" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5">
+                <mxCell id="10" value="WorkoutAssignedUser" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="5" vertex="1" connectable="0">
                     <mxGeometry x="-0.1137" y="-1" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="11" value="- user&amp;nbsp;&lt;br&gt;1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="5">
+                <mxCell id="11" value="- user&amp;nbsp;&lt;br&gt;1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="5" vertex="1" connectable="0">
                     <mxGeometry x="0.7425" y="-2" relative="1" as="geometry">
                         <mxPoint x="3" y="19" as="offset"/>
                     </mxGeometry>
