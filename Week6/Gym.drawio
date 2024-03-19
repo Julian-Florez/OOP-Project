@@ -1,0 +1,100 @@
+<mxfile host="65bd71144e">
+    <diagram name="Página-1" id="GBJqVmvnFpaByWBmFzSr">
+        <mxGraphModel dx="528" dy="383" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-1" value="GymPackage&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;&lt;br&gt;" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" parent="1" vertex="1">
+                    <mxGeometry x="270" y="190" width="1050" height="720" as="geometry"/>
+                </mxCell>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-2" value="User" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="290" y="350" width="190" height="530" as="geometry"/>
+                </mxCell>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-3" value="&lt;div&gt;- name:String&lt;/div&gt;&lt;div&gt;- id:int&lt;/div&gt;&lt;div&gt;- contact_number:String&lt;/div&gt;&lt;div&gt;- weight:double&lt;/div&gt;&lt;div&gt;- height:double&lt;/div&gt;&lt;div&gt;- age:int&lt;/div&gt;&lt;div&gt;- bmi:double&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="0c8S-kHDC3mvuFu8LvDb-2" vertex="1">
+                    <mxGeometry y="26" width="190" height="114" as="geometry"/>
+                </mxCell>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="0c8S-kHDC3mvuFu8LvDb-2" vertex="1">
+                    <mxGeometry y="140" width="190" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-5" value="&lt;div&gt;+ User(String name, int id, String contact_number, double weight, double height, int age)&lt;/div&gt;&lt;div&gt;+ getName(): String&lt;/div&gt;&lt;div&gt;+ getId(): int&lt;/div&gt;&lt;div&gt;+ getContact_number(): String&lt;/div&gt;&lt;div&gt;+ getWeight(): double&lt;/div&gt;&lt;div&gt;+ getHeigth(): double&lt;/div&gt;&lt;div&gt;+ getAge(): int&lt;/div&gt;&lt;div&gt;+ getBmi(): double&lt;/div&gt;&lt;div&gt;+ getGoal(): Goal&lt;/div&gt;&lt;div&gt;+ getWorkout(): Workout&lt;/div&gt;&lt;div&gt;+ setContact_number(String contact_number)&lt;/div&gt;&lt;div&gt;+ setWeight(double weight)&lt;/div&gt;&lt;div&gt;+ setHeight(double height)&lt;/div&gt;&lt;div&gt;+ setAge(int age)&lt;/div&gt;&lt;div&gt;+ setGoal(Goal goal)&lt;/div&gt;&lt;div&gt;+ setWorkout(Workout workout)&lt;/div&gt;&lt;div&gt;+ calculateBMI()&lt;/div&gt;&lt;div&gt;+toString(): String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="0c8S-kHDC3mvuFu8LvDb-2" vertex="1">
+                    <mxGeometry y="148" width="190" height="382" as="geometry"/>
+                </mxCell>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-6" value="Exercise" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="1150" y="550" width="160" height="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-7" value="&lt;div&gt;- exercise_name:String&lt;/div&gt;&lt;div&gt;- exercise_type:String&lt;/div&gt;&lt;div&gt;- duration:int&lt;/div&gt;&lt;div&gt;- calories_burnt:int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="0c8S-kHDC3mvuFu8LvDb-6" vertex="1">
+                    <mxGeometry y="26" width="160" height="64" as="geometry"/>
+                </mxCell>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="0c8S-kHDC3mvuFu8LvDb-6" vertex="1">
+                    <mxGeometry y="90" width="160" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-9" value="&lt;div&gt;+ Exercise(String exercise_name, String exercise_type, int duration, double calories_burnt)&lt;/div&gt;&lt;div&gt;+ getExercise_name(): String&lt;/div&gt;&lt;div&gt;+ getExercise_type(): String&lt;/div&gt;&lt;div&gt;+ getDuration(): int&lt;/div&gt;&lt;div&gt;+ getCalories_burnt(): double&lt;/div&gt;&lt;div&gt;+ setDuration(int Duration)&lt;/div&gt;&lt;div&gt;+ setCalories_burnt(double calories_burnt)&lt;/div&gt;&lt;div&gt;+ setExercise_type(String exercise_type)&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="0c8S-kHDC3mvuFu8LvDb-6" vertex="1">
+                    <mxGeometry y="98" width="160" height="252" as="geometry"/>
+                </mxCell>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-11" value="Workout" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="650" y="540" width="160" height="320" as="geometry"/>
+                </mxCell>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-12" value="&lt;div&gt;- workout_name:String&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;- total_duration:int&lt;/span&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;- total_calories_burned:int&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="0c8S-kHDC3mvuFu8LvDb-11" vertex="1">
+                    <mxGeometry y="26" width="160" height="54" as="geometry"/>
+                </mxCell>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-13" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="0c8S-kHDC3mvuFu8LvDb-11" vertex="1">
+                    <mxGeometry y="80" width="160" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-14" value="&lt;div&gt;+ Workout(String workout_name)&lt;/div&gt;&lt;div&gt;+ getWorkout_name(): String&lt;/div&gt;&lt;div&gt;+ getExercises(): String&lt;/div&gt;&lt;div&gt;+ getTotal_duration(): int&lt;/div&gt;&lt;div&gt;+ getTotal_calories_burnt(): int&lt;/div&gt;&lt;div&gt;+ setWorkout_name(String workout_name)&lt;/div&gt;&lt;div&gt;+ addExercise(Exercise exercise)&lt;/div&gt;&lt;div&gt;+ removeExercise(Exercise exercise)&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="0c8S-kHDC3mvuFu8LvDb-11" vertex="1">
+                    <mxGeometry y="88" width="160" height="232" as="geometry"/>
+                </mxCell>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-15" value="Goal" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="881.0699999999999" y="270" width="160" height="220" as="geometry"/>
+                </mxCell>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-16" value="- target_weight:int&#10;- deadline:String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="0c8S-kHDC3mvuFu8LvDb-15" vertex="1">
+                    <mxGeometry y="26" width="160" height="44" as="geometry"/>
+                </mxCell>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-17" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="0c8S-kHDC3mvuFu8LvDb-15" vertex="1">
+                    <mxGeometry y="70" width="160" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="0c8S-kHDC3mvuFu8LvDb-18" value="&lt;div&gt;+ Goal(int target_weight, String deadline)&lt;/div&gt;&lt;div&gt;+ getTarget_weight(): int&lt;/div&gt;&lt;div&gt;+ getDeadline(): String&lt;/div&gt;&lt;div&gt;+ setTarget_weight(int target_weight)&lt;/div&gt;&lt;div&gt;+ setDeadline(String deadline)&lt;/div&gt;&lt;div&gt;+ toString(): String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="0c8S-kHDC3mvuFu8LvDb-15" vertex="1">
+                    <mxGeometry y="78" width="160" height="142" as="geometry"/>
+                </mxCell>
+                <mxCell id="2" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="0c8S-kHDC3mvuFu8LvDb-3" target="0c8S-kHDC3mvuFu8LvDb-16" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="UserHasGoals" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="2" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0699" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="9" value="- goals&lt;br&gt;1...*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="2" vertex="1" connectable="0">
+                    <mxGeometry x="0.7324" y="-1" relative="1" as="geometry">
+                        <mxPoint x="-14" y="-22" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="0c8S-kHDC3mvuFu8LvDb-12" target="0c8S-kHDC3mvuFu8LvDb-7" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="WorkoutHasExercises" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="4" vertex="1" connectable="0">
+                    <mxGeometry x="0.1143" y="1" relative="1" as="geometry">
+                        <mxPoint x="-24" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="7" value="- exercises&lt;br&gt;1...*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="4" vertex="1" connectable="0">
+                    <mxGeometry x="-0.8253" relative="1" as="geometry">
+                        <mxPoint x="271" y="18" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" parent="1" source="0c8S-kHDC3mvuFu8LvDb-12" target="0c8S-kHDC3mvuFu8LvDb-3" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="WorkoutAssignedUser" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="5" vertex="1" connectable="0">
+                    <mxGeometry x="-0.1137" y="-1" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="11" value="- user&amp;nbsp;&lt;br&gt;1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="5" vertex="1" connectable="0">
+                    <mxGeometry x="0.7425" y="-2" relative="1" as="geometry">
+                        <mxPoint x="3" y="19" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
