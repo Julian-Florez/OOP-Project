@@ -12,7 +12,7 @@ public class Course {
 
     private int MAX_STUDENTS = 30;
     private int num_students = 0;
-    ArrayList<Student> students;
+    private ArrayList<Student> students;
 
     public Course() {
 
