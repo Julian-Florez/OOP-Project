@@ -1,12 +1,9 @@
 <mxfile host="65bd71144e">
     <diagram name="Página-1" id="qqk2K5_pDjCYKN5iAL0d">
-        <mxGraphModel dx="3016" dy="3613" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1508" dy="3368" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="LrH_3oRk7ts7FuKDNX95-2" value="&lt;div&gt;Shoppingpackage&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="shape=folder;fontStyle=1;spacingTop=10;tabWidth=40;tabHeight=14;tabPosition=left;html=1;whiteSpace=wrap;" parent="1" vertex="1">
-                    <mxGeometry x="380" y="-1019" width="1740" height="870" as="geometry"/>
-                </mxCell>
                 <mxCell id="LrH_3oRk7ts7FuKDNX95-7" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Customer&amp;quot;,&amp;quot;m&amp;quot;:[{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:8},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp2&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:8}]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Customer&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="450" y="-949" width="240" height="310" as="geometry"/>
                 </mxCell>
@@ -20,7 +17,7 @@
                     <mxGeometry y="118" width="240" height="192" as="geometry"/>
                 </mxCell>
                 <mxCell id="LrH_3oRk7ts7FuKDNX95-11" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Product&amp;quot;,&amp;quot;m&amp;quot;:[{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:7},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp2&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:7}]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Product&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="420" y="-509" width="250" height="300" as="geometry"/>
+                    <mxGeometry x="880" y="-734" width="250" height="300" as="geometry"/>
                 </mxCell>
                 <mxCell id="LrH_3oRk7ts7FuKDNX95-12" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;- name:String\n- id:int\n- price:double\n- stock:int\n- category:String&amp;quot;,&amp;quot;m&amp;quot;:[{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;od&amp;quot;,&amp;quot;v&amp;quot;:1},{&amp;quot;s&amp;quot;:14,&amp;quot;n&amp;quot;:&amp;quot;od&amp;quot;,&amp;quot;v&amp;quot;:1},{&amp;quot;s&amp;quot;:23,&amp;quot;n&amp;quot;:&amp;quot;od&amp;quot;,&amp;quot;v&amp;quot;:1},{&amp;quot;s&amp;quot;:38,&amp;quot;n&amp;quot;:&amp;quot;od&amp;quot;,&amp;quot;v&amp;quot;:1},{&amp;quot;s&amp;quot;:50,&amp;quot;n&amp;quot;:&amp;quot;od&amp;quot;,&amp;quot;v&amp;quot;:1},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:67},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp2&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:67}]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;- name:String&lt;br&gt;- id:int&lt;br&gt;- price:double&lt;br&gt;- stock:int&lt;br&gt;- category:String&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="LrH_3oRk7ts7FuKDNX95-11" vertex="1">
                     <mxGeometry y="26" width="250" height="84" as="geometry"/>
@@ -32,7 +29,7 @@
                     <mxGeometry y="118" width="250" height="182" as="geometry"/>
                 </mxCell>
                 <mxCell id="LrH_3oRk7ts7FuKDNX95-15" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Cart&amp;quot;,&amp;quot;m&amp;quot;:[{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:4},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp2&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:4}]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Cart&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="1090" y="-549" width="220" height="200" as="geometry"/>
+                    <mxGeometry x="1780" y="-740" width="220" height="200" as="geometry"/>
                 </mxCell>
                 <mxCell id="LrH_3oRk7ts7FuKDNX95-16" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;- customer:Customer\n- products:ArrayList&lt;Prodcuct&gt;&amp;quot;,&amp;quot;m&amp;quot;:[{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;od&amp;quot;,&amp;quot;v&amp;quot;:1},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:50},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp2&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:50}]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;- customer:Customer&lt;br&gt;- products:ArrayList&amp;lt;Prodcuct&amp;gt;&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="LrH_3oRk7ts7FuKDNX95-15" vertex="1">
                     <mxGeometry y="26" width="220" height="44" as="geometry"/>
@@ -44,7 +41,7 @@
                     <mxGeometry y="78" width="220" height="122" as="geometry"/>
                 </mxCell>
                 <mxCell id="LrH_3oRk7ts7FuKDNX95-19" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;Order&amp;quot;,&amp;quot;m&amp;quot;:[{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:5},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp2&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:5}]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;Order&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="1700" y="-669" width="370" height="300" as="geometry"/>
+                    <mxGeometry x="2220" y="-1120" width="370" height="300" as="geometry"/>
                 </mxCell>
                 <mxCell id="LrH_3oRk7ts7FuKDNX95-20" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;- id:int\n- cart:Cart\n- total:double\n- methodOfPayment:MethodOfPayment\n- processed:boolean\n- delivered:boolean&amp;quot;,&amp;quot;m&amp;quot;:[{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;od&amp;quot;,&amp;quot;v&amp;quot;:1},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:109},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp2&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:109}]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;- id:int&lt;br&gt;- cart:Cart&lt;br&gt;- total:double&lt;br&gt;- methodOfPayment:MethodOfPayment&lt;br&gt;- processed:boolean&lt;br&gt;- delivered:boolean&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="LrH_3oRk7ts7FuKDNX95-19" vertex="1">
                     <mxGeometry y="26" width="370" height="94" as="geometry"/>
@@ -56,7 +53,7 @@
                     <mxGeometry y="128" width="370" height="172" as="geometry"/>
                 </mxCell>
                 <mxCell id="LrH_3oRk7ts7FuKDNX95-23" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;MethodOfPayment&amp;quot;,&amp;quot;m&amp;quot;:[{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:15},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp2&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:15}]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;MethodOfPayment&lt;/span&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="1090" y="-959" width="343" height="330" as="geometry"/>
+                    <mxGeometry x="850" y="-1300" width="343" height="330" as="geometry"/>
                 </mxCell>
                 <mxCell id="LrH_3oRk7ts7FuKDNX95-24" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;- customer:Customer\n- type:String\n- number:String\n- expirationDate:String\n- cvv:String&amp;quot;,&amp;quot;m&amp;quot;:[{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;od&amp;quot;,&amp;quot;v&amp;quot;:1},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:86},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp2&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:86}]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;- customer:Customer&lt;br&gt;- type:String&lt;br&gt;- number:String&lt;br&gt;- expirationDate:String&lt;br&gt;- cvv:String&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="LrH_3oRk7ts7FuKDNX95-23" vertex="1">
                     <mxGeometry y="26" width="343" height="104" as="geometry"/>
@@ -67,70 +64,51 @@
                 <mxCell id="LrH_3oRk7ts7FuKDNX95-26" value="&lt;span data-lucid-content=&quot;{&amp;quot;t&amp;quot;:&amp;quot;+ MethodOfPayment(Customer customer, String type, String number, String expirationDate, String cvv)\n+ getCustomer(): Customer\n+ getType(): String\n+ getNumber(): String\n+ getExpirationDate(): String\n+ getCvv(): String\n+ setType(String type)\n+ setNumber(string number)\n+ setExpirationDate(String expirationDate)\n+ setCvv(String cvv\n+ toString(): String&amp;quot;,&amp;quot;m&amp;quot;:[{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:100,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:126,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:146,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:168,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:198,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:217,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:240,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:267,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:310,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:330,&amp;quot;n&amp;quot;:&amp;quot;a&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;left&amp;quot;},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:350},{&amp;quot;s&amp;quot;:0,&amp;quot;n&amp;quot;:&amp;quot;fsp2&amp;quot;,&amp;quot;v&amp;quot;:&amp;quot;ss_presetShapeStyle1_textStyle&amp;quot;,&amp;quot;e&amp;quot;:350}]}&quot; data-lucid-type=&quot;application/vnd.lucid.text&quot;&gt;+ MethodOfPayment(Customer customer, String type, String number, String expirationDate, String cvv)&lt;br&gt;+ getCustomer(): Customer&lt;br&gt;+ getType(): String&lt;br&gt;+ getNumber(): String&lt;br&gt;+ getExpirationDate(): String&lt;br&gt;+ getCvv(): String&lt;br&gt;+ setType(String type)&lt;br&gt;+ setNumber(string number)&lt;br&gt;+ setExpirationDate(String expirationDate)&lt;br&gt;+ setCvv(String cvv&lt;br&gt;+ toString(): String&lt;/span&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" parent="LrH_3oRk7ts7FuKDNX95-23" vertex="1">
                     <mxGeometry y="138" width="343" height="192" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LrH_3oRk7ts7FuKDNX95-8" target="LrH_3oRk7ts7FuKDNX95-24">
+                <mxCell id="32" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="23" target="LrH_3oRk7ts7FuKDNX95-16">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1540" y="-950" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" style="edgeStyle=none;html=1;entryX=1.019;entryY=0.787;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="22" target="LrH_3oRk7ts7FuKDNX95-8">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="CustomerHaveMethods" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2">
-                    <mxGeometry x="-0.0711" y="1" relative="1" as="geometry">
-                        <mxPoint y="-7" as="offset"/>
-                    </mxGeometry>
+                <mxCell id="22" value="Shop" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="1370" y="-1000" width="160" height="86" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="- methods&lt;br&gt;1...*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="2">
-                    <mxGeometry x="0.83" y="3" relative="1" as="geometry">
-                        <mxPoint y="-15" as="offset"/>
-                    </mxGeometry>
+                <mxCell id="23" value="+ field: type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="22">
+                    <mxGeometry y="26" width="160" height="26" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LrH_3oRk7ts7FuKDNX95-8" target="LrH_3oRk7ts7FuKDNX95-16">
+                <mxCell id="24" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="22">
+                    <mxGeometry y="52" width="160" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="22">
+                    <mxGeometry y="60" width="160" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" style="edgeStyle=none;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="LrH_3oRk7ts7FuKDNX95-8" target="23">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="CustomerHaveCart" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6">
-                    <mxGeometry x="-0.1077" y="-3" relative="1" as="geometry">
-                        <mxPoint x="89" y="-29" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="8" value="- cart&lt;br&gt;1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6">
-                    <mxGeometry x="0.7698" relative="1" as="geometry">
-                        <mxPoint x="7" y="-25" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="12" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="LrH_3oRk7ts7FuKDNX95-16" target="LrH_3oRk7ts7FuKDNX95-12">
+                <mxCell id="27" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="LrH_3oRk7ts7FuKDNX95-24" target="LrH_3oRk7ts7FuKDNX95-8">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="CartHaveProducts" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="12">
-                    <mxGeometry x="0.1215" y="-2" relative="1" as="geometry">
-                        <mxPoint y="-31" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="14" value="- products&lt;br&gt;1...*" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="12">
-                    <mxGeometry x="0.8369" y="-1" relative="1" as="geometry">
-                        <mxPoint x="10" y="30" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="15" style="edgeStyle=none;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="LrH_3oRk7ts7FuKDNX95-20" target="LrH_3oRk7ts7FuKDNX95-24">
+                <mxCell id="28" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="LrH_3oRk7ts7FuKDNX95-16" target="LrH_3oRk7ts7FuKDNX95-8">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="OrderHasMethod" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="15">
-                    <mxGeometry x="0.1393" y="-2" relative="1" as="geometry">
-                        <mxPoint y="-1" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="17" value="- method&lt;br&gt;1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="15">
-                    <mxGeometry x="0.8168" relative="1" as="geometry">
-                        <mxPoint x="22" y="-24" as="offset"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="19" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="LrH_3oRk7ts7FuKDNX95-20" target="LrH_3oRk7ts7FuKDNX95-16">
+                <mxCell id="29" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;dashed=1;" edge="1" parent="1" source="LrH_3oRk7ts7FuKDNX95-20" target="LrH_3oRk7ts7FuKDNX95-16">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="OrderByCart" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="19">
-                    <mxGeometry x="-0.059" relative="1" as="geometry">
-                        <mxPoint y="-1" as="offset"/>
+                <mxCell id="30" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="23" target="LrH_3oRk7ts7FuKDNX95-20">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1520" y="-720" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="21" value="- cart&lt;br&gt;1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="19">
-                    <mxGeometry x="0.8279" y="-1" relative="1" as="geometry">
-                        <mxPoint x="-3" y="41" as="offset"/>
-                    </mxGeometry>
+                <mxCell id="31" style="edgeStyle=none;html=1;entryX=1;entryY=0.25;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="LrH_3oRk7ts7FuKDNX95-16" target="LrH_3oRk7ts7FuKDNX95-11">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="23" target="LrH_3oRk7ts7FuKDNX95-24">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="34" style="edgeStyle=none;html=1;entryX=1;entryY=0.5;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;" edge="1" parent="1" source="23" target="LrH_3oRk7ts7FuKDNX95-12">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
