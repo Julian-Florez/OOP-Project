@@ -23,4 +23,12 @@ public class Mammal extends Animal{
     public void setHasFur(boolean hasFur) {
         this.hasFur = hasFur;
     }
+
+    public String toString() {
+        return super.toString() + ", has fur?: " + hasFur;
+    }
+
+    public void makeNoise() {
+        System.out.println("Shhh...");
+    }
 }

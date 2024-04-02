@@ -23,5 +23,13 @@ public class Fish extends Animal{
     public void setHasGills(boolean hasGills) {
         this.hasGills = hasGills;
     }
+
+    public String toString() {
+        return super.toString() + ", has gills?: " + hasGills;
+    }
+
+    public void makeNoise() {
+        System.out.println("Blub blub...");
+    }
     
 }

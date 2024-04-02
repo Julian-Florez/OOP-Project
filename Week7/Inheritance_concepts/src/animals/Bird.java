@@ -23,4 +23,12 @@ public class Bird extends Animal{
     public void setCanFly(boolean canFly) {
         this.canFly = canFly;
     }
+
+    public String toString() {
+        return super.toString() + ", can fly?: " + canFly;
+    }
+
+    public void makeNoise() {
+        System.out.println("Chirp chirp...");
+    }
 }

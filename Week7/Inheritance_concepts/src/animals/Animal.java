@@ -40,4 +40,8 @@ public class Animal {
     public void setAge(int age) {
         this.age = age;
     }
+
+    public String toString() {
+        return species + ": " + age;
+    }
 }
