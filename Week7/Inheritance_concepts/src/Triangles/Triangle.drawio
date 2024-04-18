@@ -1,11 +1,11 @@
 <mxfile host="65bd71144e">
     <diagram id="_HhppWgZhZwFgTNu2Y6z" name="Página-1">
-        <mxGraphModel dx="1732" dy="430" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="2999" dy="1032" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
                 <mxCell id="2" value="Triangle" style="swimlane;fontStyle=3;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="110" y="40" width="600" height="180" as="geometry"/>
+                    <mxGeometry x="110" y="40" width="600" height="410" as="geometry"/>
                 </mxCell>
                 <mxCell id="3" value="# side1: double&#10;# side2: double&#10;# side3: double&#10;# angle1: double&#10;# angle2: double&#10;# angle3: double&#10;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" parent="2" vertex="1">
                     <mxGeometry y="26" width="600" height="94" as="geometry"/>
@@ -13,61 +13,68 @@
                 <mxCell id="4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="2" vertex="1">
                     <mxGeometry y="120" width="600" height="8" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" value="+ Triangle(side1 double, side2 double, side3 double, angle1 double, angle2 double, angle3 double)&lt;br&gt;+ calculatePerimeter(): double&lt;br&gt;&lt;i&gt;+ calculateArea(): double&lt;/i&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;horizontal=1;html=1;" parent="2" vertex="1">
-                    <mxGeometry y="128" width="600" height="52" as="geometry"/>
+                <mxCell id="5" value="&lt;div&gt;+ Triangle(side1: double, side2: double, side3: double)&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ getSide1(): double&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ setSide1(side1: double): void&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;+ getSide2(): double&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ setSide2(side2: double): void&amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;+ getSide3(): double&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ setSide3(side3: double): void&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ setAngle1(angle1: double):void&lt;/div&gt;&lt;div&gt;+ getAngle1(): double&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;+ setAngle2&lt;span style=&quot;background-color: initial;&quot;&gt;(angle2: double):void&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;+ getAngle2&lt;span style=&quot;background-color: initial;&quot;&gt;(): double&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;+ setAngle3&lt;span style=&quot;background-color: initial;&quot;&gt;(angle3: double):void&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;+ getAngle3&lt;span style=&quot;background-color: initial;&quot;&gt;(): double&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;+ getPerimeter(): double&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;&lt;i&gt;+ getArea(): double&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &lt;/i&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&lt;/div&gt;&lt;div&gt;+ isEquilateral(): boolean&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ isIsosceles(): boolean&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ isScalene(): boolean&amp;nbsp;&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;horizontal=1;html=1;" parent="2" vertex="1">
+                    <mxGeometry y="128" width="600" height="282" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.488;entryY=1.019;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="6" target="5">
+                <mxCell id="19" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.488;entryY=1.004;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="6" target="5" edge="1">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="380" y="226" as="targetPoint"/>
+                        <mxPoint x="400" y="350" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="21" value="Extends" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="19">
+                <mxCell id="21" value="Extends" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="19" vertex="1" connectable="0">
                     <mxGeometry x="0.0912" y="-2" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="6" value="Equilateral" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
-                    <mxGeometry x="-290" y="280" width="550" height="80" as="geometry"/>
+                    <mxGeometry x="-289" y="500" width="550" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="8" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="6" vertex="1">
                     <mxGeometry y="26" width="550" height="8" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="+ Equilateral(side1 double)&lt;br&gt;+ calculateArea(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;html=1;rounded=1;" parent="6" vertex="1">
+                <mxCell id="9" value="+ EquilateralTriangle(side: double)&lt;br&gt;+ calculateArea(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;fontStyle=0;html=1;rounded=1;" parent="6" vertex="1">
                     <mxGeometry y="34" width="550" height="46" as="geometry"/>
                 </mxCell>
-                <mxCell id="18" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="10" target="5">
-                    <mxGeometry relative="1" as="geometry"/>
+                <mxCell id="18" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.498;entryY=0.995;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="24" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="400" y="850" as="sourcePoint"/>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="22" value="Extends" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="18">
+                <mxCell id="22" value="Extends" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="18" vertex="1" connectable="0">
                     <mxGeometry x="0.2296" y="2" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="10" value="Isosceles" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="140" y="400" width="540" height="70" as="geometry"/>
+                <mxCell id="20" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.498;entryY=0.996;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="14" target="5" edge="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="410" y="350" as="targetPoint"/>
+                    </mxGeometry>
                 </mxCell>
-                <mxCell id="12" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="10">
-                    <mxGeometry y="26" width="540" height="8" as="geometry"/>
-                </mxCell>
-                <mxCell id="13" value="+ Isosceles(side1 double, side2 double, angle1 double, angle2 double)&lt;br&gt;+ calculateArea(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="10">
-                    <mxGeometry y="34" width="540" height="36" as="geometry"/>
-                </mxCell>
-                <mxCell id="20" style="edgeStyle=none;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.505;entryY=1.038;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="14" target="5">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="23" value="Extends" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="20">
+                <mxCell id="23" value="Extends" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="20" vertex="1" connectable="0">
                     <mxGeometry x="0.3308" y="-1" relative="1" as="geometry">
                         <mxPoint x="24" y="9" as="offset"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="14" value="Scalene" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
-                    <mxGeometry x="700" y="280" width="540" height="70" as="geometry"/>
+                <mxCell id="14" value="Scalene" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" parent="1" vertex="1">
+                    <mxGeometry x="701" y="500" width="540" height="90" as="geometry"/>
                 </mxCell>
-                <mxCell id="16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="14">
+                <mxCell id="16" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" parent="14" vertex="1">
                     <mxGeometry y="26" width="540" height="8" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="+ Scalene(side1 double, side2 double, side3 double, angle1 double, angle2 double, angle3 double)&lt;br&gt;+ calculateArea(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="14">
-                    <mxGeometry y="34" width="540" height="36" as="geometry"/>
+                <mxCell id="17" value="&lt;div&gt;+ ScaleneTriangle(side1: double, side2: double, side3: double)&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ isScalene(): boolean&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div&gt;+ getArea(): double&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" parent="14" vertex="1">
+                    <mxGeometry y="34" width="540" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="Isosceles" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;" vertex="1" parent="1">
+                    <mxGeometry x="231" y="620" width="350" height="150" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="- base: double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;" vertex="1" parent="24">
+                    <mxGeometry y="26" width="350" height="26" as="geometry"/>
+                </mxCell>
+                <mxCell id="26" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="24">
+                    <mxGeometry y="52" width="350" height="8" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="+ IsoscelesTriangle(side1: double, side2: double, base: double)&amp;nbsp;&lt;br&gt;+ getBase(): double&amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;+ setBase(base: double): void&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;+ isIsosceles(): boolean&lt;br&gt;+ getAngle(): double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;html=1;" vertex="1" parent="24">
+                    <mxGeometry y="60" width="350" height="90" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
