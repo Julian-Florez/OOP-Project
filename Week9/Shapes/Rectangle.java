@@ -10,4 +10,9 @@ public class Rectangle extends Parallelogram{
     public double calculateArea() {
         return side1 * side2;
     }
+
+    @Override
+    public Rectangle clone() {
+        return new Rectangle(side1, side2);
+    }
 }

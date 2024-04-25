@@ -1,4 +1,4 @@
-public abstract class Triangle implements IShape{
+public abstract class Triangle implements IShape, Cloneable{
     protected double side1;
     protected double side2;
     protected double side3;
@@ -63,5 +63,10 @@ public abstract class Triangle implements IShape{
         side3 = side3*scaleFactor;
     }
 
+    public String toString() { 
+        return "Triangle: Side1: " + side1 + " Side2: " + side2 + " Side3: " + side3 + " Angle1: " + angle1 + " Angle2: " + angle2 + " Angle3: " + angle3;
+    }
+
+    public abstract Triangle clone();
 
 }

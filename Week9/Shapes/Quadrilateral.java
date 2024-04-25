@@ -1,4 +1,4 @@
-public abstract class Quadrilateral implements IShape{
+public abstract class Quadrilateral implements IShape, Cloneable{
     protected double side1;
     protected double side2;
     protected double side3;
@@ -118,4 +118,11 @@ public abstract class Quadrilateral implements IShape{
     public void setDiagonal2(double diagonal2) {
         this.diagonal2 = diagonal2;
     }
+
+    public String toString() {
+        return "Quadrilateral: Side1: " + side1 + ", Side2: " + side2 + ", Side3: " + side3 + ", Side4: " + side4 + ", Angle1: " + angle1 + ", Angle2: " + angle2 + ", Angle3: " + angle3 + ", Angle4: " + angle4 + ", Diagonal1: " + diagonal1 + ", Diagonal2: " + diagonal2;
+    }
+
+    @Override
+    public abstract Quadrilateral clone();
 }

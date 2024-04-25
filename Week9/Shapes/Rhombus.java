@@ -8,4 +8,8 @@ public class Rhombus  extends Parallelogram{
     public double calculateArea() {
         return diagonal1 * diagonal2 / 2;
     }
+
+    public Rhombus clone() {
+        return new Rhombus(side1, angle1, angle2, diagonal1, diagonal2);
+    }
 }

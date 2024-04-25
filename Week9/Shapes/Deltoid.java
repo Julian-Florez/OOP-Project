@@ -9,4 +9,8 @@ public class Deltoid extends Quadrilateral {
         return diagonal1 * diagonal2 / 2;
     }
 
+    public Deltoid clone() {
+        return new Deltoid(side1, side2, angle1, angle2, diagonal1, diagonal2);
+    }
+
 }

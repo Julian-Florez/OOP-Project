@@ -8,5 +8,8 @@ public class Equilateral extends Triangle{
         return (Math.sqrt(3)/4) * side1 * side1;
     }
 
+    public Equilateral clone() {
+        return new Equilateral(side1);
+    }
 
 }

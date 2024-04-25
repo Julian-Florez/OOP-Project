@@ -11,6 +11,9 @@ public class Isosceles extends Triangle{
         return 0.5 * base * Math.sqrt(side1 * side1 - 0.25 * base * base);
     }
     
+    public Isosceles clone() {
+        return new Isosceles(side1, side2, base, angle1, angle2, angle3);
+    }
     
 
 

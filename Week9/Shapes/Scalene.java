@@ -8,4 +8,8 @@ public class Scalene extends Triangle{
         double s = (side1 + side2 + side3) / 2;
         return Math.sqrt(s * (s - side1) * (s - side2) * (s - side3));
     }
+
+    public Scalene clone() {
+        return new Scalene(side1, side2, side3, angle1, angle2, angle3);
+    }
 }
