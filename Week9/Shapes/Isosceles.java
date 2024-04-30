@@ -15,7 +15,7 @@ public class Isosceles extends Triangle {
      * @param angle2 the measure of the second angle
      * @param angle3 the measure of the third angle
      */
-    public Isosceles(double side1, double side2, double base, double angle1, double angle2, double angle3) {
+    public Isosceles(double side1, double side2, double base, double angle1, double angle2, double angle3) throws InvalidTriangleException{
         super(side1, side2, side1, angle1, angle2, angle3);
         this.base = base;
     }
@@ -36,6 +36,10 @@ public class Isosceles extends Triangle {
      * @return a deep copy of the Isosceles object
      */
     public Isosceles clone() {
-        return new Isosceles(side1, side2, base, angle1, angle2, angle3);
+        try {
+            return new Isosceles(side1, side2, base, angle1, angle2, angle3);
+        } catch (InvalidTriangleException e) {
+            return null;
+        }
     }
 }

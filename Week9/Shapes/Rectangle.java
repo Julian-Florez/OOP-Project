@@ -12,7 +12,7 @@ public class Rectangle extends Parallelogram {
      * @param side1 the length of the first side of the rectangle
      * @param side2 the length of the second side of the rectangle
      */
-    public Rectangle(double side1, double side2) {
+    public Rectangle(double side1, double side2) throws InvalidQuadrilateralException{
         super(side1, side2, 90, 90, 0, 0);
         this.diagonal1 = Math.sqrt(Math.pow(side1, 2) + Math.pow(side2, 2));
         this.diagonal2 = Math.sqrt(Math.pow(side1, 2) + Math.pow(side2, 2));
@@ -35,6 +35,10 @@ public class Rectangle extends Parallelogram {
      */
     @Override
     public Rectangle clone() {
-        return new Rectangle(side1, side2);
+        try {
+            return new Rectangle(side1, side2);
+        } catch (InvalidQuadrilateralException e) {
+            return null;
+        }
     }
 }

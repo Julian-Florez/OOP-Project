@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 /**
  * The Quadrilateral class represents a quadrilateral shape.
  * It implements the IShape interface and provides common methods and properties for quadrilaterals.
@@ -28,7 +30,7 @@ public abstract class Quadrilateral implements IShape, Cloneable, Comparable<Qua
      * @param diagonal1 the length of diagonal 1
      * @param diagonal2 the length of diagonal 2
      */
-    public Quadrilateral(double side1, double side2, double side3, double side4, double angle1, double angle2, double angle3, double angle4, double diagonal1, double diagonal2) {
+    public Quadrilateral(double side1, double side2, double side3, double side4, double angle1, double angle2, double angle3, double angle4, double diagonal1, double diagonal2) throws InvalidQuadrilateralException {
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
@@ -39,6 +41,21 @@ public abstract class Quadrilateral implements IShape, Cloneable, Comparable<Qua
         this.angle4 = angle4;
         this.diagonal1 = diagonal1;
         this.diagonal2 = diagonal2;
+        if (!isValidQuadrilateral()) {
+            throw new InvalidQuadrilateralException("Invalid quadrilateral");
+        }
+    }
+    /**
+     * Validates the quadrilateral inequality theorem, which says the sum of the lengths of the shortest three sides of a quadrilateral must be longer than the longest side.
+     *
+     * @return true if the side lengths satisfy the theorem, false otherwise
+     */
+    public boolean isValidQuadrilateral() {
+        double[] sides = {side1, side2, side3, side4};
+        Arrays.sort(sides);
+        double sumOfShortestThreeSides = sides[0] + sides[1] + sides[2];
+        double longestSide = sides[3];
+        return sumOfShortestThreeSides > longestSide;
     }
 
     /**

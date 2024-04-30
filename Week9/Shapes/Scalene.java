@@ -15,7 +15,7 @@ public class Scalene extends Triangle {
      * @param angle2  the measure of the second angle in degrees
      * @param angle3  the measure of the third angle in degrees
      */
-    public Scalene(double side1, double side2, double side3, double angle1, double angle2, double angle3) {
+    public Scalene(double side1, double side2, double side3, double angle1, double angle2, double angle3) throws InvalidTriangleException{
         super(side1, side2, side3, angle1, angle2, angle3);
     }
 
@@ -36,6 +36,10 @@ public class Scalene extends Triangle {
      * @return a new Scalene object that is a copy of this object
      */
     public Scalene clone() {
-        return new Scalene(side1, side2, side3, angle1, angle2, angle3);
+        try {
+            return new Scalene(side1, side2, side3, angle1, angle2, angle3);
+        } catch (InvalidTriangleException e) {
+            return null;
+        }
     }
 }

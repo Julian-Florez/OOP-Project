@@ -8,8 +8,9 @@ public class Equilateral extends Triangle {
      * Constructs a new Equilateral object with the specified side length.
      *
      * @param side the length of each side of the equilateral triangle
+     * @throws InvalidTriangleException 
      */
-    public Equilateral(double side) { 
+    public Equilateral(double side) throws InvalidTriangleException { 
         super(side, side, side, 60.0, 60.0, 60.0);
     }
 
@@ -28,7 +29,11 @@ public class Equilateral extends Triangle {
      * @return a new Equilateral object with the same side length as this object
      */
     public Equilateral clone() {
-        return new Equilateral(side1);
+        try {
+            return new Equilateral(side1);
+        } catch (InvalidTriangleException e) {
+            return null;
+        }
     }
 }
 

@@ -8,7 +8,7 @@ public class Square extends Rectangle{
      * Constructs a Square object with the given side length.
      * @param side1 the length of the side of the square
      */
-    public Square(double side1) {
+    public Square(double side1) throws InvalidQuadrilateralException{
         super(side1, side1);
     }
 
@@ -27,6 +27,10 @@ public class Square extends Rectangle{
      */
     @Override
     public Square clone() {
-        return new Square(side1);
+        try {
+            return new Square(side1);
+        } catch (InvalidQuadrilateralException e) {
+            return null;
+        }
     }
 }

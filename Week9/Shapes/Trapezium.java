@@ -23,7 +23,7 @@ public class Trapezium extends Quadrilateral{
      * @param diagonal1 the length of the first diagonal
      * @param diagonal2 the length of the second diagonal
      */
-    public Trapezium(double side1, double side2, double side3, double side4, double angle1, double angle2, double angle3, double angle4, double diagonal1, double diagonal2) {
+    public Trapezium(double side1, double side2, double side3, double side4, double angle1, double angle2, double angle3, double angle4, double diagonal1, double diagonal2) throws InvalidQuadrilateralException{
         super(side1, side2, side3, side4, angle1, angle2, angle3, angle4, diagonal1, diagonal2);
         this.rads = Math.toRadians(angle1);
         this.height = Math.sin(rads) * side1;
@@ -45,6 +45,10 @@ public class Trapezium extends Quadrilateral{
      * @return a new Trapezium object with the same property values as this object
      */
     public Trapezium clone() {
-         return new Trapezium(side1, side2, side3, side4, angle1, angle2, angle3, angle4, diagonal1, diagonal2);
+         try {
+            return new Trapezium(side1, side2, side3, side4, angle1, angle2, angle3, angle4, diagonal1, diagonal2);
+        } catch (InvalidQuadrilateralException e) {
+            return null;
+        }
     }
 }

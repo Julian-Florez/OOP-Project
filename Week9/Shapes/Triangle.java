@@ -16,14 +16,17 @@ public abstract class Triangle implements IShape, Cloneable, Comparable<Triangle
     /**
      * Constructs a Triangle object with the specified side lengths and angles.
      *
-     * @param side1  the length of side 1
-     * @param side2  the length of side 2
-     * @param side3  the length of side 3
-     * @param angle1 the measure of angle 1
-     * @param angle2 the measure of angle 2
-     * @param angle3 the measure of angle 3
+     * @param side1   the length of side 1
+     * @param side2   the length of side 2
+     * @param side3   the length of side 3
+     * @param angle1  the measure of angle 1 in degrees
+     * @param angle2  the measure of angle 2 in degrees
+     * @param angle3  the measure of angle 3 in degrees
      */
-    Triangle(double side1, double side2, double side3, double angle1, double angle2, double angle3) {
+    Triangle(double side1, double side2, double side3, double angle1, double angle2, double angle3) throws InvalidTriangleException {
+        if (!isValidTriangle(side1, side2, side3)) {
+            throw new InvalidTriangleException("Invalid triangle");
+        }
         this.side1 = side1;
         this.side2 = side2;
         this.side3 = side3;
@@ -31,9 +34,21 @@ public abstract class Triangle implements IShape, Cloneable, Comparable<Triangle
         this.angle2 = angle2;
         this.angle3 = angle3;
     }
+    
+    /**
+     * Checks if the given side lengths form a valid triangle.
+     *
+     * @param side1 the length of side 1
+     * @param side2 the length of side 2
+     * @param side3 the length of side 3
+     * @return true if the side lengths form a valid triangle, false otherwise
+     */
+    public boolean isValidTriangle(double side1, double side2, double side3) {
+        return side1 + side2 > side3 && side2 + side3 > side1 && side1 + side3 > side2;
+    }
 
     /**
-     * Returns the length of side 1.
+     * Gets the length of side 1.
      *
      * @return the length of side 1
      */
@@ -42,7 +57,7 @@ public abstract class Triangle implements IShape, Cloneable, Comparable<Triangle
     }
 
     /**
-     * Returns the length of side 2.
+     * Gets the length of side 2.
      *
      * @return the length of side 2
      */
@@ -51,7 +66,7 @@ public abstract class Triangle implements IShape, Cloneable, Comparable<Triangle
     }
 
     /**
-     * Returns the length of side 3.
+     * Gets the length of side 3.
      *
      * @return the length of side 3
      */
@@ -60,27 +75,27 @@ public abstract class Triangle implements IShape, Cloneable, Comparable<Triangle
     }
 
     /**
-     * Returns the measure of angle 1.
+     * Gets the measure of angle 1 in degrees.
      *
-     * @return the measure of angle 1
+     * @return the measure of angle 1 in degrees
      */
     public double getAngle1() {
         return angle1;
     }
 
     /**
-     * Returns the measure of angle 2.
+     * Gets the measure of angle 2 in degrees.
      *
-     * @return the measure of angle 2
+     * @return the measure of angle 2 in degrees
      */
     public double getAngle2() {
         return angle2;
     }
 
     /**
-     * Returns the measure of angle 3.
+     * Gets the measure of angle 3 in degrees.
      *
-     * @return the measure of angle 3
+     * @return the measure of angle 3 in degrees
      */
     public double getAngle3() {
         return angle3;
@@ -114,34 +129,34 @@ public abstract class Triangle implements IShape, Cloneable, Comparable<Triangle
     }
 
     /**
-     * Sets the measure of angle 1.
+     * Sets the measure of angle 1 in degrees.
      *
-     * @param angle1 the measure of angle 1
+     * @param angle1 the measure of angle 1 in degrees
      */
     public void setAngle1(double angle1) {
         this.angle1 = angle1;
     }
 
     /**
-     * Sets the measure of angle 2.
+     * Sets the measure of angle 2 in degrees.
      *
-     * @param angle2 the measure of angle 2
+     * @param angle2 the measure of angle 2 in degrees
      */
     public void setAngle2(double angle2) {
         this.angle2 = angle2;
     }
 
     /**
-     * Sets the measure of angle 3.
+     * Sets the measure of angle 3 in degrees.
      *
-     * @param angle3 the measure of angle 3
+     * @param angle3 the measure of angle 3 in degrees
      */
     public void setAngle3(double angle3) {
         this.angle3 = angle3;
     }
 
     /**
-     * Calculates and returns the area of the triangle.
+     * Calculates the area of the triangle.
      * Subclasses must implement this method.
      *
      * @return the area of the triangle
@@ -149,7 +164,7 @@ public abstract class Triangle implements IShape, Cloneable, Comparable<Triangle
     public abstract double calculateArea();
 
     /**
-     * Calculates and returns the perimeter of the triangle.
+     * Calculates the perimeter of the triangle.
      *
      * @return the perimeter of the triangle
      */
@@ -178,15 +193,16 @@ public abstract class Triangle implements IShape, Cloneable, Comparable<Triangle
     }
 
     /**
-     * Creates and returns a copy of the triangle.
+     * Creates and returns a copy of this triangle.
      * Subclasses must implement this method.
      *
-     * @return a copy of the triangle
+     * @return a copy of this triangle
      */
     public abstract Triangle clone();
 
     /**
-     * Compares this triangle with the specified triangle for order based on their areas.
+     * Compares this triangle with the specified triangle for order.
+     * Returns a negative integer, zero, or a positive integer as this triangle is less than, equal to, or greater than the specified triangle.
      *
      * @param t the triangle to be compared
      * @return a negative integer, zero, or a positive integer as this triangle is less than, equal to, or greater than the specified triangle

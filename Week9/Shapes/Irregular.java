@@ -18,8 +18,11 @@ public class Irregular extends Quadrilateral {
      * @param diagonal1 the length of the first diagonal
      * @param diagonal2 the length of the second diagonal
      */
-    public Irregular(double side1, double side2, double side3, double side4, double angle1, double angle2, double angle3, double angle4, double diagonal1, double diagonal2) {
+    public Irregular(double side1, double side2, double side3, double side4, double angle1, double angle2, double angle3, double angle4, double diagonal1, double diagonal2) throws InvalidQuadrilateralException{
         super(side1, side2, side3, side4, angle1, angle2, angle3, angle4, diagonal1, diagonal2);
+        if (!isValidQuadrilateral()) {
+            throw new InvalidQuadrilateralException("Invalid quadrilateral");
+        }
     }
 
     /**
@@ -40,7 +43,11 @@ public class Irregular extends Quadrilateral {
      * @return a new `Irregular` object that is a copy of the current object
      */
     public Irregular clone() {
-        return new Irregular(side1, side2, side3, side4, angle1, angle2, angle3, angle4, diagonal1, diagonal2);
+        try {
+            return new Irregular(side1, side2, side3, side4, angle1, angle2, angle3, angle4, diagonal1, diagonal2);
+        } catch (InvalidQuadrilateralException e) {
+            return null;
+        }
     }
 
 }
