@@ -1,14 +1,14 @@
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
-
 
 public class Main {
     public static void main(String[] args) {
         // Create instances of Rectangle and Square
-        Quadrilateral rect1 = new Rectangle(4, 5);
-        Quadrilateral rect2 = new Rectangle(3, 6);
-        Quadrilateral square1 = new Square(4);
+        Rectangle rect1 = new Rectangle(4, 5);
+        Rectangle rect2 = new Rectangle(3, 6);
+        Square square1 = new Square(4);
 
         // Test compareTo method
         System.out.println("Comparing rect1 and rect2: " + rect1.compareTo(rect2)); // Expected output: Comparison based on area
@@ -39,7 +39,7 @@ public class Main {
 }
 
 // Concrete subclass for Rectangle
-class Rectangle extends Quadrilateral {
+class Rectangle extends Quadrilateral implements Comparable<Rectangle> {
     public Rectangle(double length, double width) {
         super(length, width, length, width, 90, 90, 90, 90, Math.sqrt(length * length + width * width), Math.sqrt(length * length + width * width));
     }
@@ -53,6 +53,11 @@ class Rectangle extends Quadrilateral {
     public Quadrilateral clone() {
         return new Rectangle(side1, side2);
     }
+
+    @Override
+    public int compareTo(Rectangle other) {
+        return Double.compare(this.calculateArea(), other.calculateArea());
+    }
 }
 
 // Concrete subclass for Square
@@ -65,4 +70,13 @@ class Square extends Rectangle {
     public Quadrilateral clone() {
         return new Square(side1);
     }
+}
+
+abstract class Quadrilateral {
+    protected double side1;
+    protected double side2;
+    
+    public abstract double calculateArea(); // Added calculateArea() method
+    
+    // ... rest of the code
 }

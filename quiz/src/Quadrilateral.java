@@ -122,8 +122,5 @@ public abstract class Quadrilateral implements IShape, Cloneable, Comparable<Qua
         } else {
             return 0; // Both quadrilaterals have equal area
         }
-public abstract class Quadrilateral implements Cloneable, Comparable<Quadrilateral> {
-    // Existing code...
-}
     }
 }
