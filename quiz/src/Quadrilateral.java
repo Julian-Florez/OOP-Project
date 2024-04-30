@@ -1,5 +1,6 @@
 import java.lang.Cloneable;
 import java.lang.Comparable;
+
 public abstract class Quadrilateral implements IShape, Cloneable, Comparable<Quadrilateral> {
     protected double side1;
     protected double side2;
@@ -86,16 +87,11 @@ public abstract class Quadrilateral implements IShape, Cloneable, Comparable<Qua
     public void setDiagonal2(double diagonal2) { this.diagonal2 = diagonal2; }
 
     // toString method for debugging and logging purposes
-    @Override
-    public String toString() {
-        return "Quadrilateral: Side1: " + side1 + ", Side2: " + side2 + ", Side3: " + side3 + ", Side4: " + side4 +
-               ", Angle1: " + angle1 + ", Angle2: " + angle2 + ", Angle3: " + angle3 + ", Angle4: " + angle4 +
-               ", Diagonal1: " + diagonal1 + ", Diagonal2: " + diagonal2;
-    }
+    // Remove the duplicate toString() method
 
     // Clone method implementation
     @Override
-    public Quadrilateral clone() {
+    public Object clone() throws CloneNotSupportedException {
         try {
             // Shallow copy
             Quadrilateral cloned = (Quadrilateral) super.clone();

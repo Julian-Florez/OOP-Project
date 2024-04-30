@@ -1,7 +1,3 @@
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
 public class Main {
     public static void main(String[] args) {
         // Create instances of Rectangle and Square
@@ -13,34 +9,19 @@ public class Main {
         System.out.println("Comparing rect1 and rect2: " + rect1.compareTo(rect2)); // Expected output: Comparison based on area
         System.out.println("Comparing rect1 and square1: " + rect1.compareTo(square1)); // Expected output: Comparison based on area
 
-        // Test sorting of a collection
-        List<Quadrilateral> quads = new ArrayList<>();
-        quads.add(rect1);
-        quads.add(rect2);
-        quads.add(square1);
-
-        // Sort the list of quadrilaterals
-        Collections.sort(quads);
-
-        // Print sorted list
-        System.out.println("Sorted quadrilaterals based on area:");
-        for (Quadrilateral quad : quads) {
-            System.out.println(quad + " - Area: " + quad.calculateArea());
-        }
-
         // Test clone method
-        Quadrilateral clone = rect1.clone();
+        Quadrilateral clonedRect = rect1.clone();
         System.out.println("Original rectangle: " + rect1);
-        System.out.println("Cloned rectangle: " + clone);
-        System.out.println("Are original and clone the same object? " + (rect1 == clone)); // Expected output: false
-        System.out.println("Do original and clone have the same properties? " + rect1.equals(clone)); // Expected output: true
+        System.out.println("Cloned rectangle: " + clonedRect);
+        System.out.println("Are original and clone the same object? " + (rect1 == clonedRect)); // Expected output: false
+        System.out.println("Do original and clone have the same properties? " + rect1.equals(clonedRect)); // Expected output: true
     }
 }
 
 // Concrete subclass for Rectangle
-class Rectangle extends Quadrilateral implements Comparable<Rectangle> {
-    public Rectangle(double length, double width) {
-        super(length, width, length, width, 90, 90, 90, 90, Math.sqrt(length * length + width * width), Math.sqrt(length * length + width * width));
+class Rectangle extends Quadrilateral {
+    public Rectangle(double side1, double side2) {
+        super(side1, side2, side1, side2, 90.0, 90.0, 90.0, 90.0, Math.sqrt(side1 * side1 + side2 * side2), Math.sqrt(side1 * side1 + side2 * side2));
     }
 
     @Override
@@ -49,12 +30,7 @@ class Rectangle extends Quadrilateral implements Comparable<Rectangle> {
     }
 
     @Override
-    public Quadrilateral clone() {
-        return new Rectangle(side1, side2);
-    }
-
-    @Override
-    public int compareTo(Rectangle other) {
+    public int compareTo(Quadrilateral other) {
         return Double.compare(this.calculateArea(), other.calculateArea());
     }
 }
@@ -71,11 +47,21 @@ class Square extends Rectangle {
     }
 }
 
-abstract class Quadrilateral {
+abstract class Quadrilateral implements Comparable<Quadrilateral> {
     protected double side1;
     protected double side2;
     
     public abstract double calculateArea(); // Added calculateArea() method
     
     // ... rest of the code
+    
+    @Override
+    public int compareTo(Quadrilateral other) {
+        return Double.compare(this.calculateArea(), other.calculateArea());
+    }
+
+    @Override
+    public Quadrilateral clone() {
+        return new Rectangle(side1, side2);
+    }
 }

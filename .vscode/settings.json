@@ -2,5 +2,6 @@
     "java.project.sourcePaths": [
         "Week7/Inheritance_concepts/src",
         "Week9/Shapes"
-    ]
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }
