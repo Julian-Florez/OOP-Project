@@ -2,8 +2,14 @@ public class Main {
     public static void main(String[] args) {
 
         Square square = new Square(5);
+        Square square1 = new Square(2);
+
         Deltoid deltoid = new Deltoid(3, 4, 60, 120, 5, 6);
+        Deltoid deltoid1 = new Deltoid(3, 4, 60, 120, 5, 6);
+
         Equilateral equilateral = new Equilateral(5);
+        Equilateral equilateral1 = new Equilateral(8);
+
         Irregular irregular = new Irregular(3, 4, 5,2,20,60,70, 80, 90, 100);
         Isosceles isosceles = new Isosceles(3, 4, 5, 60, 60, 60);
         IsoscelesTrapezium isoscelesTrapezium = new IsoscelesTrapezium(3, 4, 5, 60, 30, 6);
@@ -51,7 +57,11 @@ public class Main {
 
         System.out.println(square.equals(square2));
 
-        
+        System.out.println(square.compareTo(square1));
+
+        System.out.println(deltoid.compareTo(deltoid1));
+
+        System.out.println(equilateral.compareTo(equilateral1));
 
 
         
