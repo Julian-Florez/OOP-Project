@@ -1,4 +1,4 @@
-public abstract class Triangle implements IShape, Cloneable{
+public abstract class Triangle implements IShape, Cloneable, Comparable<Triangle>{
     protected double side1;
     protected double side2;
     protected double side3;
@@ -69,4 +69,13 @@ public abstract class Triangle implements IShape, Cloneable{
 
     public abstract Triangle clone();
 
+    public int compareTo(Triangle t) {
+        if (this.calculateArea() > t.calculateArea()) {
+            return 1;
+        } else if (this.calculateArea() < t.calculateArea()) {
+            return -1;
+        } else {
+            return 0;
+        }
+    }
 }

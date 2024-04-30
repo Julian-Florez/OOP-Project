@@ -1,4 +1,4 @@
-public abstract class Quadrilateral implements IShape, Cloneable{
+public abstract class Quadrilateral implements IShape, Cloneable, Comparable<Quadrilateral>{
     protected double side1;
     protected double side2;
     protected double side3;
@@ -125,4 +125,15 @@ public abstract class Quadrilateral implements IShape, Cloneable{
 
     @Override
     public abstract Quadrilateral clone();
+
+    @Override
+    public int compareTo(Quadrilateral o) {
+        if (this.calculateArea() > o.calculateArea()) {
+            return 1;
+        } else if (this.calculateArea() < o.calculateArea()) {
+            return -1;
+        } else {
+            return 0;
+        }
+    }
 }
