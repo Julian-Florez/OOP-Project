@@ -1,4 +1,11 @@
 public class Main {
+    /**
+     * The main method is the entry point of the program.
+     * It creates instances of various shape objects, calculates their areas,
+     * and performs some operations on them.
+     *
+     * @param args The command-line arguments passed to the program.
+     */
     public static void main(String[] args) {
 
         Square square = new Square(5);

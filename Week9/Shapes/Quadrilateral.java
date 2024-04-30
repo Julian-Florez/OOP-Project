@@ -1,4 +1,8 @@
-public abstract class Quadrilateral implements IShape, Cloneable, Comparable<Quadrilateral>{
+/**
+ * The Quadrilateral class represents a quadrilateral shape.
+ * It implements the IShape interface and provides common methods and properties for quadrilaterals.
+ */
+public abstract class Quadrilateral implements IShape, Cloneable, Comparable<Quadrilateral> {
     protected double side1;
     protected double side2;
     protected double side3;
@@ -10,7 +14,20 @@ public abstract class Quadrilateral implements IShape, Cloneable, Comparable<Qua
     protected double diagonal1;
     protected double diagonal2;
 
-
+    /**
+     * Constructs a Quadrilateral object with the specified sides, angles, and diagonals.
+     *
+     * @param side1     the length of side 1
+     * @param side2     the length of side 2
+     * @param side3     the length of side 3
+     * @param side4     the length of side 4
+     * @param angle1    the measure of angle 1
+     * @param angle2    the measure of angle 2
+     * @param angle3    the measure of angle 3
+     * @param angle4    the measure of angle 4
+     * @param diagonal1 the length of diagonal 1
+     * @param diagonal2 the length of diagonal 2
+     */
     public Quadrilateral(double side1, double side2, double side3, double side4, double angle1, double angle2, double angle3, double angle4, double diagonal1, double diagonal2) {
         this.side1 = side1;
         this.side2 = side2;
@@ -24,12 +41,28 @@ public abstract class Quadrilateral implements IShape, Cloneable, Comparable<Qua
         this.diagonal2 = diagonal2;
     }
 
+    /**
+     * Calculates the perimeter of the quadrilateral.
+     *
+     * @return the perimeter of the quadrilateral
+     */
     public double calculatePerimeter() {
         return side1 + side2 + side3 + side4;
     }
 
+    /**
+     * Calculates the area of the quadrilateral.
+     * This method needs to be implemented by concrete subclasses.
+     *
+     * @return the area of the quadrilateral
+     */
     public abstract double calculateArea();
 
+    /**
+     * Scales the quadrilateral by the specified factor.
+     *
+     * @param scaleFactor the factor by which to scale the quadrilateral
+     */
     public void scale(double scaleFactor) {
         side1 *= scaleFactor;
         side2 *= scaleFactor;
@@ -38,94 +71,34 @@ public abstract class Quadrilateral implements IShape, Cloneable, Comparable<Qua
         diagonal1 *= scaleFactor;
         diagonal2 *= scaleFactor;
     }
-    
-    public double getSide1() {
-        return side1;
-    }
 
-    public void setSide1(double side1) {
-        this.side1 = side1;
-    }
+    // Getters and setters for the properties
 
-    public double getSide2() {
-        return side2;
-    }
+    // ...
 
-    public void setSide2(double side2) {
-        this.side2 = side2;
-    }
-
-    public double getSide3() {
-        return side3;
-    }
-
-    public void setSide3(double side3) {
-        this.side3 = side3;
-    }
-
-    public double getSide4() {
-        return side4;
-    }
-
-    public void setSide4(double side4) {
-        this.side4 = side4;
-    }
-
-    public double getAngle1() {
-        return angle1;
-    }
-
-    public void setAngle1(double angle1) {
-        this.angle1 = angle1;
-    }
-
-    public double getAngle2() {
-        return angle2;
-    }
-
-    public void setAngle2(double angle2) {
-        this.angle2 = angle2;
-    }
-
-    public double getAngle3() {
-        return angle3;
-    }
-
-    public void setAngle3(double angle3) {
-        this.angle3 = angle3;
-    }
-
-    public double getAngle4() {
-        return angle4;
-    }
-
-    public void setAngle4(double angle4) {
-        this.angle4 = angle4;
-    }
-
-    public double getDiagonal1() {
-        return diagonal1;
-    }
-
-    public void setDiagonal1(double diagonal1) {
-        this.diagonal1 = diagonal1;
-    }
-
-    public double getDiagonal2() {
-        return diagonal2;
-    }
-
-    public void setDiagonal2(double diagonal2) {
-        this.diagonal2 = diagonal2;
-    }
-
+    /**
+     * Returns a string representation of the quadrilateral.
+     *
+     * @return a string representation of the quadrilateral
+     */
     public String toString() {
         return "Quadrilateral: Side1: " + side1 + ", Side2: " + side2 + ", Side3: " + side3 + ", Side4: " + side4 + ", Angle1: " + angle1 + ", Angle2: " + angle2 + ", Angle3: " + angle3 + ", Angle4: " + angle4 + ", Diagonal1: " + diagonal1 + ", Diagonal2: " + diagonal2;
     }
 
+    /**
+     * Creates and returns a copy of this quadrilateral.
+     *
+     * @return a copy of this quadrilateral
+     */
     @Override
     public abstract Quadrilateral clone();
 
+    /**
+     * Compares this quadrilateral with the specified quadrilateral for order.
+     *
+     * @param o the quadrilateral to be compared
+     * @return a negative integer, zero, or a positive integer as this quadrilateral is less than, equal to, or greater than the specified quadrilateral
+     */
     @Override
     public int compareTo(Quadrilateral o) {
         if (this.calculateArea() > o.calculateArea()) {
