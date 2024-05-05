@@ -1,0 +1,9 @@
+Description: You are implementing a class called PairManager that manages a collection of Pair objects. Each pair represents a key-value pair, where the key and value are both integers. The PairManager class provides methods to add pairs to the collection, retrieve pairs by key, and convert the pair collection into a String (toString).
+
+However, you want to ensure that certain constraints are enforced when adding pairs to the collection. Specifically, you want to prevent the addition of pairs with duplicate keys. If a pair with a duplicate key is added, you must throw a custom exception named DuplicateKeyException.
+
+Your task is to implement the PairManager class and the DuplicateKeyException class, ensuring that the PairManager class properly handles the exception (by throwing it) when duplicate keys are encountered (keep in mind you can use the Pair class used in the past quiz). Additionally, you must implement a Main class with the static main method to use the 'PairManager'.
+
+Tip: Remember that the PairManager class is responsible for throwing the DuplicateKeyException when a duplicate key is encountered, and the Main class catches the exception and reports the error via the console. This approach separates the responsibilities of each class, making the code more organized and easier to understand.
+
+ 
