@@ -1,6 +1,8 @@
 {
     "java.project.sourcePaths": [
-        "Week9/Shapes"
+        "Week9/Shapes",
+        "Week7/Inheritance_concepts/src",
+        "Week10/Quiz/src"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }

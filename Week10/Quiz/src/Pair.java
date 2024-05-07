@@ -1,9 +1,9 @@
 /**
  * Represents a key-value pair.
  */
-public class Pair {
-    private int key;
-    private int value;
+public class Pair<T> {
+    private T key;
+    private T value;
     
     /**
      * Constructs a Pair object with the given key and value.
@@ -11,7 +11,7 @@ public class Pair {
      * @param key   the key of the pair
      * @param value the value of the pair
      */
-    public Pair(int key, int value) {
+    public Pair(T key, T value) {
         this.key = key;
         this.value = value;
     }
@@ -21,7 +21,7 @@ public class Pair {
      * 
      * @return the key of the pair
      */
-    public int getKey() {
+    public T getKey() {
         return key;
     }
 
@@ -30,7 +30,7 @@ public class Pair {
      * 
      * @return the value of the pair
      */
-    public int getValue() {
+    public T getValue() {
         return value;
     }
 
@@ -38,7 +38,7 @@ public class Pair {
      * Swaps the key and value of the pair.
      */
     public void swapPair() {
-        int temp = key;
+        T temp = key;
         key = value;
         value = temp;
     }

@@ -4,8 +4,8 @@ import java.util.ArrayList;
  * The PairManager class represents a manager for a collection of Pair objects.
  * It provides methods to add pairs, retrieve pairs by key, and convert the pairs to a string representation.
  */
-public class PairManager {
-    private ArrayList<Pair> pairs;
+public class PairManager<T> {
+    private ArrayList<Pair<T>> pairs;
 
 
     /**
@@ -21,9 +21,9 @@ public class PairManager {
      * @param pair the Pair object to be added
      * @throws DuplicateKeyException if a Pair with the same key already exists in the PairManager
      */
-    public void addPair(Pair pair) throws DuplicateKeyException {
-        int key = pair.getKey();
-        for (Pair p : pairs) {
+    public void addPair(Pair<T> pair) throws DuplicateKeyException {
+        T key = pair.getKey();
+        for (Pair<T> p : pairs) {
             if (p.getKey() == key) {
                 throw new DuplicateKeyException("Duplicate key: " + key);
             }
@@ -38,9 +38,9 @@ public class PairManager {
      * @param key the key to search for
      * @return the Pair object with the specified key, or null if not found
      */
-    public Pair getPairByKey(int key) {
-        for (Pair pair : pairs) {
-            if (pair.getKey() == key) {
+    public Pair<T> getPairByKey(T key) {
+        for (Pair<T> pair : pairs) {
+            if (pair.getKey().equals(key)) {
                 return pair;
             }
         }
@@ -54,7 +54,7 @@ public class PairManager {
      */
     public String toString() {
         String result = "";
-        for (Pair pair : pairs) {
+        for (Pair<T> pair : pairs) {
             result += pair.toString() + "\n";
         }
         return result;
