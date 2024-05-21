@@ -6,10 +6,20 @@ import javax.imageio.ImageIO;
 import javax.swing.*;
 
 
+/**
+ * The ImageManager class is responsible for processing and managing images.
+ */
 public class ImageManager {
 
     private String color = "red";
 
+    /**
+     * Processes the images based on the given decoration options.
+     *
+     * @param dec1 Boolean value indicating whether to apply decoration 1.
+     * @param dec2 Boolean value indicating whether to apply decoration 2.
+     * @param dec3 Boolean value indicating whether to apply decoration 3.
+     */
     public void ProcessImages(Boolean dec1, Boolean dec2, Boolean dec3) {
         // Load the images
         BufferedImage image1 = loadImage("src/color/"+ color +".png");
@@ -34,10 +44,21 @@ public class ImageManager {
         saveImage(resultImage, "result.png");
     }
 
+    /**
+     * Sets the color for the images.
+     *
+     * @param color The color to set.
+     */
     public void setColor(String color) {
         this.color = color;
     }
 
+    /**
+     * Overlays multiple images onto a single image.
+     *
+     * @param images The images to overlay.
+     * @return The resulting image after overlaying.
+     */
     public static BufferedImage overlayImages(BufferedImage... images) {
         int maxWidth = 0;
         int maxHeight = 0;
@@ -62,6 +83,12 @@ public class ImageManager {
         return resultImage;
     }
 
+    /**
+     * Loads an image from the specified file path.
+     *
+     * @param imagePath The file path of the image to load.
+     * @return The loaded image, or null if an error occurs.
+     */
     public static BufferedImage loadImage(String imagePath) {
         try {
             return ImageIO.read(new File(imagePath));
@@ -71,6 +98,12 @@ public class ImageManager {
         }
     }
 
+    /**
+     * Saves an image to the specified output path.
+     *
+     * @param image      The image to save.
+     * @param outputPath The output path to save the image to.
+     */
     public static void saveImage(BufferedImage image, String outputPath) {
         try {
             ImageIO.write(image, "png", new File(outputPath));
@@ -79,6 +112,9 @@ public class ImageManager {
         }
     }
 
+    /**
+     * Displays the result image in a new window.
+     */
     public void showImage() {
         // Load the result image
         BufferedImage image = loadImage("result.png");
@@ -88,6 +124,4 @@ public class ImageManager {
         File file = new File("result.png");
         file.delete();
     }
-
-
 }

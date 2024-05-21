@@ -1,8 +1,20 @@
 import javax.swing.*;
 import java.awt.*;
 
+/**
+ * The Window class represents a graphical window that allows users to select colors and apply decorators to an image.
+ * It extends the JFrame class to create a window with a specific layout and components.
+ */
 public class Window extends JFrame {
 
+    /**
+     * Constructs a new Window object.
+     * Sets up the frame with a title, size, layout, and default close operation.
+     * Creates radio buttons for color selection and checkboxes for decorator selection.
+     * Adds action listeners to the radio buttons to set the selected color in the ImageManager.
+     * Adds an action listener to the "Show Image" button to process the selected decorators and display the image.
+     * Displays the frame.
+     */
     public Window() {
 
         // Set up the frame
@@ -83,6 +95,11 @@ public class Window extends JFrame {
         setVisible(true);
     }
 
+    /**
+     * The entry point of the program.
+     * Creates a new Window object to start the application.
+     * @param args the command line arguments
+     */
     public static void main(String[] args) {
         new Window();
     }
