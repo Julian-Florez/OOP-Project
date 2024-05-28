@@ -2,21 +2,21 @@ package view;
 import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
-import controller.PuzzleController;
 
 public class PuzzleView {
-
+    
     private String text;
+    private ArrayList<JButton> buttons = new ArrayList<JButton>();
 
-    public PuzzleView(ArrayList<Integer> numbers, ArrayList<ArrayList<Integer>> board, PuzzleController controller) {
+    public PuzzleView(ArrayList<Integer> numbers) {
         JFrame frame = new JFrame("Puzzle");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 400);
-        frame.add(displayBoard(numbers, board, controller));
+        frame.add(displayBoard(numbers));
         frame.setVisible(true);
     }
 
-    public JPanel displayBoard(ArrayList<Integer> numbers, ArrayList<ArrayList<Integer>> board, PuzzleController controller) {
+    public JPanel displayBoard(ArrayList<Integer> numbers) {
         JPanel panel = new JPanel(new GridLayout(4, 4));
 
         for (Integer number : numbers) {
@@ -28,12 +28,14 @@ public class PuzzleView {
                 text=number.toString();
             }
             JButton button = new JButton(text);
-            button.addActionListener(e -> {
-                controller.check_move_vertical(number);
-            });
+            this.buttons.add(button);
             panel.add(button);
         }
 
         return panel;
+    }
+
+    public ArrayList<JButton> getButtons() {
+        return buttons;
     }
 }

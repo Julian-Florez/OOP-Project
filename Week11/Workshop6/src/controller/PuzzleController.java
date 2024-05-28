@@ -1,15 +1,22 @@
 package controller;
-import model.PuzzleModel;
 import java.util.ArrayList;
+import javax.swing.JButton;
+import model.PuzzleModel;
 
 public class PuzzleController {
 
-    ArrayList<ArrayList<Integer>> board;
+    private ArrayList<ArrayList<Integer>> board;
 
-    public PuzzleController(){
+    public PuzzleController(ArrayList<JButton> buttons, PuzzleModel model){
+        for (JButton button : buttons) {
+            button.addActionListener(e -> {
+                System.out.println(model.checkMoveVertical(Integer.parseInt(button.getText())));
+            });
+        }
     }
 
-    public void check_move_vertical(int number){
-        System.out.println(number);
+    public void setBoard(ArrayList<ArrayList<Integer>> board){
+        this.board = board;
     }
+
 }

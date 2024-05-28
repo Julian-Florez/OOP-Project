@@ -39,4 +39,31 @@ public class PuzzleModel {
     public ArrayList<Integer> getNumlist() {
         return numlist;
     }
+
+    public void setNumlist(ArrayList<Integer> numlist) {
+        this.numlist = numlist;
+    }
+
+    public void setBoard(ArrayList<ArrayList<Integer>> board) {
+        this.board = board;
+    }
+
+    public boolean checkMoveVertical(int number) {
+        int index = numlist.indexOf(number);
+        int row = index / 4;
+        int col = index % 4;
+
+        if (row == 0) {
+            return false;
+        }
+
+        int newIndex = (row - 1) * 4 + col;
+        int newNumber = numlist.get(newIndex);
+
+        numlist.set(index, newNumber);
+        numlist.set(newIndex, number);
+
+        return true;
+    }
+
 }
