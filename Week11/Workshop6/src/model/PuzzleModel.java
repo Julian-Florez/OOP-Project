@@ -57,13 +57,21 @@ public class PuzzleModel {
             return false;
         }
 
-        int newIndex = (row - 1) * 4 + col;
-        int newNumber = numlist.get(newIndex);
+        else if (row == 3) {
+            return false;
+        }
 
-        numlist.set(index, newNumber);
-        numlist.set(newIndex, number);
+        else if (row == 1){
+            return true;
+        }
 
-        return true;
+        else if (row == 2){
+            return true;
+        }
+
+        return false;
+
+        
     }
 
 }
