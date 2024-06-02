@@ -2,12 +2,12 @@ package controller;
 import java.util.ArrayList;
 import javax.swing.JButton;
 import model.PuzzleModel;
+import view.PuzzleView;
 
 public class PuzzleController {
 
-    private ArrayList<ArrayList<Integer>> board;
-
-    public PuzzleController(ArrayList<JButton> buttons, PuzzleModel model){
+    public PuzzleController(PuzzleView view, PuzzleModel model){
+        ArrayList<JButton> buttons = view.getButtons();
         for (JButton button : buttons) {
             button.addActionListener(e -> {
                 System.out.println(model.checkMoveVertical(Integer.parseInt(button.getText())));
@@ -15,8 +15,10 @@ public class PuzzleController {
         }
     }
 
-    public void setBoard(ArrayList<ArrayList<Integer>> board){
-        this.board = board;
+    public static void main(String[] args) {
+        PuzzleModel model = new PuzzleModel();
+        PuzzleView view = new PuzzleView(model.getNumlist());
+        new PuzzleController(view, model);
     }
 
 }

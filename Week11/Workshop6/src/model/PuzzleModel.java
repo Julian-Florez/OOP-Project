@@ -10,6 +10,7 @@ public class PuzzleModel {
     public PuzzleModel() {
 
         numlist = new ArrayList<Integer>();
+        board = new ArrayList<ArrayList<Integer>>();
 
         for (int i = 1; i < 16; i++) {
             numlist.add(i);
@@ -18,8 +19,7 @@ public class PuzzleModel {
         Collections.shuffle(numlist);
 
         numlist.add(0);
-
-        board = new ArrayList<ArrayList<Integer>>();
+        
 
         for (int i = 0; i < 4; i++) {
             ArrayList<Integer> row = new ArrayList<Integer>();
@@ -53,25 +53,6 @@ public class PuzzleModel {
         int row = index / 4;
         int col = index % 4;
 
-        if (row == 0) {
-            return false;
-        }
 
-        else if (row == 3) {
-            return false;
-        }
-
-        else if (row == 1){
-            return true;
-        }
-
-        else if (row == 2){
-            return true;
-        }
-
-        return false;
-
-        
-    }
 
 }
