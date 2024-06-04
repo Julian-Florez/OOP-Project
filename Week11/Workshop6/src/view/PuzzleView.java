@@ -1,5 +1,4 @@
 package view;
-
 import java.util.ArrayList;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -13,16 +12,22 @@ import java.awt.Frame;
 import java.io.IOException;
 import java.io.File;
 
-public class PuzzleView{
+/**
+ * The PuzzleView class represents the view component of the puzzle game.
+ * It is responsible for displaying the game board and updating it as the game progresses.
+ */
+public class PuzzleView {
 
     private String text;
     private ArrayList<JButton> buttons = new ArrayList<JButton>();
     private JFrame frame = new JFrame(" ");
     private Font customfont;
-    private JButton playButton;
 
-
-    public PuzzleView(){
+    /**
+     * Constructs a PuzzleView object.
+     * Initializes the frame and loads the custom font.
+     */
+    public PuzzleView() {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(400, 400);
         frame.setResizable(false);
@@ -34,17 +39,28 @@ public class PuzzleView{
         }
     }
 
-    public void loadFont() throws FontFormatException, IOException{
+    /**
+     * Loads the custom font from a file.
+     *
+     * @throws FontFormatException if the font file is not in the correct format.
+     * @throws IOException if an I/O error occurs while reading the font file.
+     */
+    public void loadFont() throws FontFormatException, IOException {
         customfont = Font.createFont(Font.TRUETYPE_FONT, new File("assets/font.ttf"));
         customfont = customfont.deriveFont(Font.PLAIN, 46);
     }
 
-
-    public void displayBoard(ArrayList<ArrayList<Integer>> board, Frame frame){ {
+    /**
+     * Displays the game board on the frame.
+     *
+     * @param board the game board represented as a 2D ArrayList of integers.
+     * @param frame the frame on which the board will be displayed.
+     */
+    public void displayBoard(ArrayList<ArrayList<Integer>> board, Frame frame) {
         JPanel panel = new JPanel(new GridLayout(4, 4));
 
-        for (int i = 0; i < 4; i++){
-            for (int j = 0; j < 4; j++){
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
                 text = board.get(i).get(j) == 0 ? " " : Integer.toString(board.get(i).get(j));
                 JButton button = new JButton(text);
                 button.setIcon(new ImageIcon("assets/tile.png"));
@@ -61,19 +77,26 @@ public class PuzzleView{
 
         frame.add(panel);
         frame.revalidate();
-        }
     }
 
-    public void updateBoard(ArrayList<ArrayList<Integer>> board){
-        for (int i = 0; i < 4; i++){
-            for (int j = 0; j < 4; j++){
+    /**
+     * Updates the game board with the new values.
+     *
+     * @param board the updated game board represented as a 2D ArrayList of integers.
+     */
+    public void updateBoard(ArrayList<ArrayList<Integer>> board) {
+        for (int i = 0; i < 4; i++) {
+            for (int j = 0; j < 4; j++) {
                 text = board.get(i).get(j) == 0 ? " " : Integer.toString(board.get(i).get(j));
-                buttons.get(i*4+j).setText(text);
+                buttons.get(i * 4 + j).setText(text);
             }
         }
     }
 
-    public void solved(){
+    /**
+     * Displays a "Congratulations" message when the puzzle is solved.
+     */
+    public void solved() {
         frame.getContentPane().removeAll();
         JPanel panel2 = new JPanel(new GridLayout(2, 1));
         panel2.setBackground(new java.awt.Color(221, 161, 94));
@@ -90,15 +113,21 @@ public class PuzzleView{
         frame.add(panel2);
     }
 
-    public JButton getPlayButton(){
-        return playButton;
-    }
-
-    public JFrame getFrame(){
+    /**
+     * Returns the frame.
+     *
+     * @return the frame.
+     */
+    public JFrame getFrame() {
         return frame;
     }
 
-    public ArrayList<JButton> getButtons(){
+    /**
+     * Returns the list of buttons on the game board.
+     *
+     * @return the list of buttons.
+     */
+    public ArrayList<JButton> getButtons() {
         return buttons;
     }
 }
